@@ -1,0 +1,107 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/giantsPlayers/1.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/1.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/2.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/2.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/3.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/3.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/4.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/4.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/5.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/5.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/6.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/6.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/7.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/7.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/8.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/8.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/9.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/9.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/10.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/10.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/11.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/11.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/12.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/12.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/13.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/13.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/14.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/14.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/giantsPlayers/15.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/giantsPlayers/15.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	}]
+}

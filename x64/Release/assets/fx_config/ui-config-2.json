@@ -1,0 +1,85 @@
+{
+  "filters": [
+    
+    {
+      "id": 35,
+      "title": "Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 49,
+      "title": "Reds Player Emoji Filter",
+      "icon": "assets/icons/reds_player_icon.png",
+      "subMenu": "page_cam_emoji_players"
+    },
+    {
+      "id": 4,
+      "title": "3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 12,
+      "title": "Helmet Filter",
+      "icon": "assets/icons/football_helmet_icon.png",
+      "subMenu": "page_cam_team_football_helmets"
+    },
+    {
+      "id": 16,
+      "title": "Hockey Helmet Filter",
+      "icon": "assets/icons/hockey_helmet_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 24,
+      "title": "Face Paint Yankees Filter",
+      "icon": "assets/icons/New_York_Yankees_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 25,
+      "title": "Yankees Hat Filter",
+      "icon": "assets/icons/iconYankeesHat.png",
+      "subMenu": ""
+    },
+    {
+      "id": 21,
+      "title": "Marlins Hat Filter",
+      "icon": "assets/icons/Marlins_hat_v002.png"
+    },
+    {
+      "id": 28,
+      "title": "Soccer Ball Head Filter",
+      "icon": "assets/icons/soccerBallHead.png"
+    },
+    {
+      "id": 13,
+      "title": "Dragon Filter",
+      "icon": "assets/icons/dragon_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 11,
+      "title": "Bobble Head Filter",
+      "icon": "assets/icons/bobble_head_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 3,
+      "title": "Painted Cheeks Filter",
+      "icon": "assets/icons/logo.png",
+      "subMenu": ""
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/billy_marlin.json",
+      "title": "Billy Marlin Filter",
+      "icon": "assets/icons/billyMarlin.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/angel_the_crab.json",
+      "title": "Angel the Crab Filter",
+      "icon": "assets/icons/emoji_filters_icon.png"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+#version 400
+
+in vec3 Position;
+in vec2 TexCoord;
+
+void main()
+{
+	if (TexCoord.y > 0.734 && 0.354 < TexCoord.x && TexCoord.x < 0.648)
+	{
+		discard;
+	}
+
+	gl_FragColor = vec4(0, 0, 0, 0);
+}

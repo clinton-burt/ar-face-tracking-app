@@ -1,0 +1,130 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/1.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/1.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/1.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/2.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/2.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/2.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/3.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/3.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/3.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/4.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/4.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/4.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/5.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/5.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/5.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/6.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/6.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/6.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/7.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/7.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/7.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/8.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/8.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/8.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/9.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/9.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/9.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/10.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/10.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/10.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/11.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/11.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/11.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/12.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/12.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/12.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/13.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/13.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/13.png"
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/chargers/facepaint/icons/14.png",
+      "suits": [
+        {
+          "face": "./assets/fx/chargers/facepaint/faces/14.png",
+          "left_display": "./assets/fx/chargers/facepaint/leftSide/14.png"
+        }
+      ]
+    }
+  ]
+}

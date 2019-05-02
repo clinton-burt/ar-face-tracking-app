@@ -1,0 +1,10 @@
+{
+  "filters": [
+    {
+      "id": 80,
+      "title": "Yankees Face Paint Filter",
+      "icon": "assets/icons/New_York_Yankees_icon.png",
+      "subMenu": ""
+    }
+  ]
+}

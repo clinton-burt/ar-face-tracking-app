@@ -1,0 +1,46 @@
+{
+  "modules": [
+    
+    {
+      "iconPath": "./assets/fx/phillies/smileImages/Phillies_Mouth_1.png",
+      "suits": [
+        {
+          "emojiTexture": "./assets/fx/phillies/smileImages/Phillies_Mouth_1.png",
+          "emojiScale": [ 0.8, 0.8],
+          "emojiOffset": [ 0, -1, 0 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/phillies/smileImages/Phillies_Mouth_2.png",
+      "suits": [
+        {
+          "emojiTexture": "./assets/fx/phillies/smileImages/Phillies_Mouth_2.png",
+          "emojiScale": [ 0.8, 0.8],
+          "emojiOffset": [ 0, -1, 0 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/phillies/smileImages/Phillies_Mouth_3.png",
+      "suits": [
+        {
+          "emojiTexture": "./assets/fx/phillies/smileImages/Phillies_Mouth_3.png",
+          "emojiScale": [ 0.8, 0.8],
+          "emojiOffset": [ 0, -1, 0 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/phillies/smileImages/Phillies_Mouth_4.png",
+      "suits": [
+        {
+          "emojiTexture": "./assets/fx/phillies/smileImages/Phillies_Mouth_4.png",
+          "emojiScale": [ 0.8, 0.8],
+          "emojiOffset": [ 0, -1, 0 ]
+        }
+      ]
+    }
+   
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "use frame light params": "true",
+  "use face light params": "true",
+
+  "iconPath": "./assets/fx/facepaint/facepaint_icon.png",
+
+  "models": [
+    {
+      "type": "FacePaintModel",
+      "name": "Paint"
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoColorTextureEdgeSmoothingVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoColorTextureEdgeSmoothingFragmentShader.txt"
+    }
+  ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/facepaint/facepaint_icon.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "leftTexture": "./assets/fx/facepaint/facepaint.png",
+          "rightTexture": "./assets/fx/facepaint/facepaint.png",
+          "verticalOffset": 0.3
+        }
+      ]
+    }
+  ]
+}

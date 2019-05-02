@@ -1,0 +1,15 @@
+layout (location = 0) in vec3 VertexPosition;
+layout (location = 1) in vec4 VertexColor;
+layout (location = 2) in vec2 VertexTexCoord;
+
+out vec2 texCoord;
+flat out vec4 color;
+
+uniform mat4 ProjectionMatrix;
+
+void main() 
+{
+	gl_Position = ProjectionMatrix * vec4(VertexPosition.xyz, 1.0);
+	texCoord = VertexTexCoord;
+	color = VertexColor;
+}

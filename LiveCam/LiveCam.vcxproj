@@ -1,0 +1,941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A8F5E72-AD2C-4337-A0FE-BD9589B500EF}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <RootNamespace>TrackerTest</RootNamespace>
+    <ProjectName>LiveCam</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ADDITIONAL_FALSE_FILTER;USE_OLD_RECOGNIZER;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;EIGEN_DONT_VECTORIZE;EIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT;WIN32;_DEBUG;_CONSOLE;_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_MULTIMEDIA_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\boost_1_63_0;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;..\freeglut\include;..\include;..\opencv\build\include;..\eigen-3.3.4;.\;.\GeneratedFiles;.\fx;.\utils;$(QTDIR)\include\QtMultimedia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\lib\x86;..\..\boost_1_63_0\stage\x86\lib%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libTrackerd.lib;opencv_core249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;Ws2_32.lib;Winmm.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;Qt5Multimediad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;WIN32;_DEBUG;_CONSOLE;_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_MULTIMEDIA_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\boost_1_63_0;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;..\freeglut\include;..\include;..\opencv\build\include;..\eigen-3.3.4;.\;.\GeneratedFiles;.\fx;.\utils;$(QTDIR)\include\QtMultimedia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005; 4067; 4267; 4305; 4838; 4244</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\lib\x64;..\..\boost_1_63_0\lib64-msvc-14.0;..\..\boost_1_63_0\stage\x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libTrackerd.lib;opencv_objdetect249d.lib;opencv_core249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;Ws2_32.lib;Winmm.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;Qt5Multimediad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ADDITIONAL_FALSE_FILTER;USE_OLD_RECOGNIZER;_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;EIGEN_DONT_VECTORIZE;EIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT;WIN32;DNDEBUG;_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_MULTIMEDIA_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\boost_1_63_0;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;..\freeglut\include;..\include;..\opencv\build\include;..\eigen-3.3.4;.\;.\GeneratedFiles;.\fx;.\utils;$(QTDIR)\include\QtMultimedia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\lib\x86;..\..\boost_1_63_0\stage\x86\lib%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libTracker.lib;opencv_core249.lib;opencv_highgui249.lib;opencv_imgproc249.lib;Ws2_32.lib;Winmm.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;Qt5Multimedia.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;_CONSOLE;_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_MULTIMEDIA_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\boost_1_63_0;..\boost_1_63_0;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;..\freeglut\include;..\include;..\opencv\build\include;..\eigen-3.3.4;.\;.\GeneratedFiles;.\fx;.\utils;$(QTDIR)\include\QtMultimedia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OPENCV_DIR)\lib;..\lib\x64;..\..\boost_1_63_0\stage\x64\lib;..\boost_1_63_0\stage\x64\lib;..\..\boost_1_63_0\lib64-msvc-14.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libTracker.lib;opencv_video249.lib;opencv_videostab249.lib;opencv_objdetect249.lib;opencv_core249.lib;opencv_highgui249.lib;opencv_imgproc249.lib;Ws2_32.lib;Winmm.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;Qt5Multimedia.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="ReadMe.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="utils\stdafx.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="utils\targetver.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="fx\AlphaMask.cpp" />
+    <ClCompile Include="fx\delaunay.cpp" />
+    <ClCompile Include="fx\DepthMask.cpp" />
+    <ClCompile Include="fx\FilterManager.cpp" />
+    <ClCompile Include="fx\Fx3dHeart.cpp" />
+    <ClCompile Include="fx\Fx3dModelAncestor.cpp" />
+    <ClCompile Include="fx\FxAnimatedEmojiAncestor.cpp" />
+    <ClCompile Include="fx\FxAnimatedStandardEmojiAncestor.cpp" />
+    <ClCompile Include="fx\FxBaseballHat.cpp" />
+    <ClCompile Include="fx\FxBigBoyHair3d_2.cpp" />
+    <ClCompile Include="fx\FxBigEyes.cpp" />
+    <ClCompile Include="fx\FxBillsFacePaint.cpp" />
+    <ClCompile Include="fx\FxBobbleHead.cpp" />
+    <ClCompile Include="fx\FxBravesTomahawkChop.cpp" />
+    <ClCompile Include="fx\FxCelticsBobbleHead.cpp" />
+    <ClCompile Include="fx\FxChargersFP.cpp" />
+    <ClCompile Include="fx\FxChicagoBullsFaceSwap.cpp" />
+    <ClCompile Include="fx\FxConferenceLogo.cpp" />
+    <ClCompile Include="fx\FxCore.cpp" />
+    <ClCompile Include="fx\FxCowboysAll.cpp" />
+    <ClCompile Include="fx\FxCowboysDog3d.cpp" />
+    <ClCompile Include="fx\FxCowboysFacePaint.cpp" />
+    <ClCompile Include="fx\FxCowboysHelmet.cpp" />
+    <ClCompile Include="fx\FxCowboysRowdy.cpp" />
+    <ClCompile Include="fx\FxCrowsFootball.cpp" />
+    <ClCompile Include="fx\FxDalmation3d.cpp" />
+    <ClCompile Include="fx\FxDebug.cpp" />
+    <ClCompile Include="fx\FxDebugFalsePositive.cpp" />
+    <ClCompile Include="fx\FxDog3d.cpp" />
+    <ClCompile Include="fx\FxDragon.cpp" />
+    <ClCompile Include="fx\FxEaglesBaseballHat.cpp" />
+    <ClCompile Include="fx\FxEaglesBlackEye.cpp" />
+    <ClCompile Include="fx\FxEaglesCrazyHair.cpp" />
+    <ClCompile Include="fx\FxEaglesMilitaryHat.cpp" />
+    <ClCompile Include="fx\FxEaglesMiniBirds.cpp" />
+    <ClCompile Include="fx\FxEaglesSwoopBeak.cpp" />
+    <ClCompile Include="fx\FxEaglesSwoopHead.cpp" />
+    <ClCompile Include="fx\FxEmojiAncestor.cpp" />
+    <ClCompile Include="fx\FxEmojiFace3d.cpp" />
+    <ClCompile Include="fx\FxEmojisCap.cpp" />
+    <ClCompile Include="fx\FxEmojisOpenGL.cpp" />
+    <ClCompile Include="fx\FxFaceDistortionAncestor.cpp" />
+    <ClCompile Include="fx\FxFacePaint.cpp" />
+    <ClCompile Include="fx\FxFacePaintAncestor.cpp" />
+    <ClCompile Include="fx\FxFacePaintAncestor2.cpp" />
+    <ClCompile Include="fx\FxFacePaintBucs.cpp" />
+    <ClCompile Include="fx\FxFacePaintNewTest.cpp" />
+    <ClCompile Include="fx\FxFacePaintRavens.cpp" />
+    <ClCompile Include="fx\FxFacePaintRavensNew.cpp" />
+    <ClCompile Include="fx\FxFacePaintSimple.cpp" />
+    <ClCompile Include="fx\FxFacePaintYankees.cpp" />
+    <ClCompile Include="fx\FxFacePinch.cpp" />
+    <ClCompile Include="fx\FxFaceSwap2.cpp" />
+    <ClCompile Include="fx\FxFaceSwapModel.cpp" />
+    <ClCompile Include="fx\FxFaceSwapSjSharksAncestor.cpp" />
+    <ClCompile Include="fx\FxFalconsCamoFacePaint.cpp" />
+    <ClCompile Include="fx\FxFireHead.cpp" />
+    <ClCompile Include="fx\FxFootballHelmet.cpp" />
+    <ClCompile Include="fx\FxFootballPlayerEmojis.cpp" />
+    <ClCompile Include="fx\FxFootballPlayerEmojisFace.cpp" />
+    <ClCompile Include="fx\FxFootballTeamHelmet.cpp" />
+    <ClCompile Include="fx\FxGeneralModel.cpp" />
+    <ClCompile Include="fx\FxGhost.cpp" />
+    <ClCompile Include="fx\FxGiantPlayers.cpp" />
+    <ClCompile Include="fx\FxGumboMascotTongue.cpp" />
+    <ClCompile Include="fx\FxHipsterBeard.cpp" />
+    <ClCompile Include="fx\FxHockeyHelmet.cpp" />
+    <ClCompile Include="fx\FxJetsMohawk.cpp" />
+    <ClCompile Include="fx\FxKnightsHelmet.cpp" />
+    <ClCompile Include="fx\FxLightningBee.cpp" />
+    <ClCompile Include="fx\FxLightningHair.cpp" />
+    <ClCompile Include="fx\FxLogo.cpp" />
+    <ClCompile Include="fx\FxMarlinsHat.cpp" />
+    <ClCompile Include="fx\FxMiamiHeatArenaEntertainersFaceSwap.cpp" />
+    <ClCompile Include="fx\FxMiamiHeatCelebritiesFaceSwap.cpp" />
+    <ClCompile Include="fx\FxMiamiHeatPastPlayersFaceSwap.cpp" />
+    <ClCompile Include="fx\FxMiamiHeatPlayersFaceSwap.cpp" />
+    <ClCompile Include="fx\FxMiamiHeatSuperHeroesFaceSwap.cpp" />
+    <ClCompile Include="fx\FxMrRedLegs.cpp" />
+    <ClCompile Include="fx\FxPanthersBeanieOpenGL.cpp" />
+    <ClCompile Include="fx\FxPanthersHelmet.cpp" />
+    <ClCompile Include="fx\FxPanthersPaintOpenGL.cpp" />
+    <ClCompile Include="fx\FxPanthersWig.cpp" />
+    <ClCompile Include="fx\FxPhilliesHat.cpp" />
+    <ClCompile Include="fx\FxPhilliesPhanatic.cpp" />
+    <ClCompile Include="fx\FxPhilliesSmile.cpp" />
+    <ClCompile Include="fx\FxPigeonMask.cpp" />
+    <ClCompile Include="fx\FxPlayerEmojis.cpp" />
+    <ClCompile Include="fx\FxRamHorns.cpp" />
+    <ClCompile Include="fx\FxRamsHelmet.cpp" />
+    <ClCompile Include="fx\FxRavensFacePaintAncestor.cpp" />
+    <ClCompile Include="fx\FxRedsCheekLogo.cpp" />
+    <ClCompile Include="fx\FxRedsFaceSwap.cpp" />
+    <ClCompile Include="fx\FxRedsPlayerEmojis.cpp" />
+    <ClCompile Include="fx\FxRidersGopher.cpp" />
+    <ClCompile Include="fx\FxRidersHelmet.cpp" />
+    <ClCompile Include="fx\FxRidersPirate.cpp" />
+    <ClCompile Include="fx\FxRidersWatermelon.cpp" />
+    <ClCompile Include="fx\FxScarfHat.cpp" />
+    <ClCompile Include="fx\FxSirPurr.cpp" />
+    <ClCompile Include="fx\FxSjSharksFaceSwap.cpp" />
+    <ClCompile Include="fx\FxSoccerBall.cpp" />
+    <ClCompile Include="fx\FxTemplate.cpp" />
+    <ClCompile Include="fx\FxTeslaHelmet.cpp" />
+    <ClCompile Include="fx\FxTeslaHelmetLightning.cpp" />
+    <ClCompile Include="fx\FxTeslaHelmetOKC.cpp" />
+    <ClCompile Include="fx\FxThanksgivingEmojis.cpp" />
+    <ClCompile Include="fx\FxVikingsFaceSwap.cpp" />
+    <ClCompile Include="fx\FxYankeesBobbleBoy.cpp" />
+    <ClCompile Include="fx\FxYankeesBobbleHead.cpp" />
+    <ClCompile Include="fx\FxYankeesHat.cpp" />
+    <ClCompile Include="fx\FxYankeesJudge.cpp" />
+    <ClCompile Include="fx\ImgMesh.cpp" />
+    <ClCompile Include="fx\math3d.cpp" />
+    <ClCompile Include="fx\MeshMaker.cpp" />
+    <ClCompile Include="fx\SpatialGraph.cpp" />
+    <ClCompile Include="fx\zPinch.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_res.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_res2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CameraWorker.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CVImageWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CVImageWidgetOrg.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_EditorWindow.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_EmojiModelTab.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_ImageSequenceUtil.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_LiveCamWindow.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_Model3DTab.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_OutputWindow.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_RenderParamsTab.cpp" />
+    <ClCompile Include="glsl.cpp" />
+    <ClCompile Include="helpers\CameraHelper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="models\DrawObjectsModel.cpp" />
+    <ClCompile Include="models\FilterUiModel.cpp" />
+    <ClCompile Include="models\FXModel.cpp" />
+    <ClCompile Include="models\OpenGLModel.cpp" />
+    <ClCompile Include="models\SpriteAnimated.cpp" />
+    <ClCompile Include="models\TeamColorsModel.cpp" />
+    <ClCompile Include="models\Uniforms.cpp" />
+    <ClCompile Include="OpenGlMain.cpp" />
+    <ClCompile Include="particles\Particles.cpp" />
+    <ClCompile Include="particles\ParticleDataTypes.cpp" />
+    <ClCompile Include="particles\ParticleManager.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="CommonClasses.cpp" />
+    <ClCompile Include="tracker\FaceTracker.cpp" />
+    <ClCompile Include="ui\EditorWindow.cpp" />
+    <ClCompile Include="ui\modelTabs\EmojiModelTab.cpp" />
+    <ClCompile Include="ui\modelTabs\Model3DTab.cpp" />
+    <ClCompile Include="ui\modelTabs\RenderParamsTab.cpp" />
+    <ClCompile Include="utils\CVImageUtil.cpp" />
+    <ClCompile Include="utils\JSONVectorReader.cpp" />
+    <ClCompile Include="utils\ModelLoader.cpp" />
+    <ClCompile Include="utils\Resolutions.cpp" />
+    <ClCompile Include="utils\sceneSwitchDetector.cpp" />
+    <ClCompile Include="utils\textfile.cpp" />
+    <ClCompile Include="utils\trackball.cc" />
+    <ClCompile Include="helpers\TrackerHelper.cpp" />
+    <ClCompile Include="ui\LiveCamWindow.cpp" />
+    <ClCompile Include="workers\CameraWorker.cpp" />
+    <ClCompile Include="ui\CVImageWidget.cpp" />
+    <ClCompile Include="ui\CVImageWidgetOrg.cpp" />
+    <ClCompile Include="models\CameraModel.cpp" />
+    <ClCompile Include="ui\OutputWindow.cpp" />
+    <ClCompile Include="utils\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonClasses.h" />
+    <ClInclude Include="FrameManager.h" />
+    <ClInclude Include="fx\AlphaMask.h" />
+    <ClInclude Include="fx\delaunay.h" />
+    <ClInclude Include="fx\DepthMask.h" />
+    <ClInclude Include="fx\FilterManager.h" />
+    <ClInclude Include="fx\Fx3dHeart.h" />
+    <ClInclude Include="fx\Fx3dModelAncestor.h" />
+    <ClInclude Include="fx\FxAnimatedEmojiAncestor.h" />
+    <ClInclude Include="fx\FxAnimatedStandardEmojiAncestor.h" />
+    <ClInclude Include="fx\FxBaseballHat.h" />
+    <ClInclude Include="fx\FxBigBoyHair3d_2.h" />
+    <ClInclude Include="fx\FxBigEyes.h" />
+    <ClInclude Include="fx\FxBillsFacePaint.h" />
+    <ClInclude Include="fx\FxBobbleHead.h" />
+    <ClInclude Include="fx\FxBravesTomahawkChop.h" />
+    <ClInclude Include="fx\FxCelticsBobbleHead.h" />
+    <ClInclude Include="fx\FxChargersFP.h" />
+    <ClInclude Include="fx\FxChicagoBullsFaceSwap.h" />
+    <ClInclude Include="fx\FxConferenceLogo.h" />
+    <ClInclude Include="fx\FxCore.h" />
+    <ClInclude Include="fx\FxCowboysAll.h" />
+    <ClInclude Include="fx\FxCowboysDog3d.h" />
+    <ClInclude Include="fx\FxCowboysFacePaint.h" />
+    <ClInclude Include="fx\FxCowboysHelmet.h" />
+    <ClInclude Include="fx\FxCowboysRowdy.h" />
+    <ClInclude Include="fx\FxCrowsFootball.h" />
+    <ClInclude Include="fx\FxDalmation3d.h" />
+    <ClInclude Include="fx\FxDebug.h" />
+    <ClInclude Include="fx\FxDebugFalsePositive.h" />
+    <ClInclude Include="fx\FxDog3d.h" />
+    <ClInclude Include="fx\FxDragon.h" />
+    <ClInclude Include="fx\FxEaglesBaseballHat.h" />
+    <ClInclude Include="fx\FxEaglesBlackEye.h" />
+    <ClInclude Include="fx\FxEaglesCrazyHair.h" />
+    <ClInclude Include="fx\FxEaglesMilitaryHat.h" />
+    <ClInclude Include="fx\FxEaglesMiniBirds.h" />
+    <ClInclude Include="fx\FxEaglesSwoopBeak.h" />
+    <ClInclude Include="fx\FxEaglesSwoopHead.h" />
+    <ClInclude Include="fx\FxEmojiAncestor.h" />
+    <ClInclude Include="fx\FxEmojiFace3d.h" />
+    <ClInclude Include="fx\FxEmojisCap.h" />
+    <ClInclude Include="fx\FxEmojisOpenGL.h" />
+    <ClInclude Include="fx\FxFaceDistortionAncestor.h" />
+    <ClInclude Include="fx\FxFacePaint.h" />
+    <ClInclude Include="fx\FxFacePaintAncestor.h" />
+    <ClInclude Include="fx\FxFacePaintAncestor2.h" />
+    <ClInclude Include="fx\FxFacePaintBucs.h" />
+    <ClInclude Include="fx\FxFacePaintNewTest.h" />
+    <ClInclude Include="fx\FxFacePaintRavens.h" />
+    <ClInclude Include="fx\FxFacePaintRavensNew.h" />
+    <ClInclude Include="fx\FxFacePaintSimple.h" />
+    <ClInclude Include="fx\FxFacePaintYankees.h" />
+    <ClInclude Include="fx\FxFacePinch.h" />
+    <ClInclude Include="fx\FxFaceSwap2.h" />
+    <ClInclude Include="fx\FxFaceSwapModel.h" />
+    <ClInclude Include="fx\FxFaceSwapSjSharksAncestor.h" />
+    <ClInclude Include="fx\FxFalconsCamoFacePaint.h" />
+    <ClInclude Include="fx\FxFireHead.h" />
+    <ClInclude Include="fx\FxFootballHelmet.h" />
+    <ClInclude Include="fx\FxFootballPlayerEmojis.h" />
+    <ClInclude Include="fx\FxFootballPlayerEmojisFace.h" />
+    <ClInclude Include="fx\FxFootballTeamHelmet.h" />
+    <ClInclude Include="fx\FxGeneralModel.h" />
+    <ClInclude Include="fx\FxGhost.h" />
+    <ClInclude Include="fx\FxGiantPlayers.h" />
+    <ClInclude Include="fx\FxGumboMascotTongue.h" />
+    <ClInclude Include="fx\FxHipsterBeard.h" />
+    <ClInclude Include="fx\FxHockeyHelmet.h" />
+    <ClInclude Include="fx\FxJetsMohawk.h" />
+    <ClInclude Include="fx\FxKnightsHelmet.h" />
+    <ClInclude Include="fx\FxLightningBee.h" />
+    <ClInclude Include="fx\FxLightningHair.h" />
+    <ClInclude Include="fx\FxLogo.h" />
+    <ClInclude Include="fx\FxMarlinsHat.h" />
+    <ClInclude Include="fx\FxMiamiHeatArenaEntertainersFaceSwap.h" />
+    <ClInclude Include="fx\FxMiamiHeatCelebritiesFaceSwap.h" />
+    <ClInclude Include="fx\FxMiamiHeatPastPlayersFaceSwap.h" />
+    <ClInclude Include="fx\FxMiamiHeatPlayersFaceSwap.h" />
+    <ClInclude Include="fx\FxMiamiHeatSuperHeroesFaceSwap.h" />
+    <ClInclude Include="fx\FxMrRedLegs.h" />
+    <ClInclude Include="fx\FxPanthersBeanieOpenGL.h" />
+    <ClInclude Include="fx\FxPanthersHelmet.h" />
+    <ClInclude Include="fx\FxPanthersPaintOpenGL.h" />
+    <ClInclude Include="fx\FxPanthersWig.h" />
+    <ClInclude Include="fx\FxPhilliesHat.h" />
+    <ClInclude Include="fx\FxPhilliesPhanatic.h" />
+    <ClInclude Include="fx\FxPhilliesSmile.h" />
+    <ClInclude Include="fx\FxPigeonMask.h" />
+    <ClInclude Include="fx\FxPlayerEmojis.h" />
+    <ClInclude Include="fx\FxRamHorns.h" />
+    <ClInclude Include="fx\FxRamsHelmet.h" />
+    <ClInclude Include="fx\FxRavensFacePaintAncestor.h" />
+    <ClInclude Include="fx\FxRedsCheekLogo.h" />
+    <ClInclude Include="fx\FxRedsFaceSwap.h" />
+    <ClInclude Include="fx\FxRedsPlayerEmojis.h" />
+    <ClInclude Include="fx\FxRidersGopher.h" />
+    <ClInclude Include="fx\FxRidersHelmet.h" />
+    <ClInclude Include="fx\FxRidersPirate.h" />
+    <ClInclude Include="fx\FxRidersWatermelon.h" />
+    <ClInclude Include="fx\FxScarfHat.h" />
+    <ClInclude Include="fx\FxSirPurr.h" />
+    <ClInclude Include="fx\FxSjSharksFaceSwap.h" />
+    <ClInclude Include="fx\FxSoccerBall.h" />
+    <ClInclude Include="fx\FxTemplate.h" />
+    <ClInclude Include="fx\FxTeslaHelmet.h" />
+    <ClInclude Include="fx\FxTeslaHelmetLightning.h" />
+    <ClInclude Include="fx\FxTeslaHelmetOKC.h" />
+    <ClInclude Include="fx\FxThanksgivingEmojis.h" />
+    <ClInclude Include="fx\FxVikingsFaceSwap.h" />
+    <ClInclude Include="fx\FxYankeesBobbleBoy.h" />
+    <ClInclude Include="fx\FxYankeesBobbleHead.h" />
+    <ClInclude Include="fx\FxYankeesHat.h" />
+    <ClInclude Include="fx\FxYankeesJudge.h" />
+    <ClInclude Include="fx\ImgMesh.h" />
+    <ClInclude Include="fx\math3d.h" />
+    <ClInclude Include="fx\MeshMaker.h" />
+    <ClInclude Include="fx\SpatialGraph.h" />
+    <ClInclude Include="fx\zPinch.h" />
+    <ClInclude Include="GeneratedFiles\ui_EditorWindow.h" />
+    <ClInclude Include="GeneratedFiles\ui_EmojiModelTab.h" />
+    <ClInclude Include="GeneratedFiles\ui_Model3DTab.h" />
+    <ClInclude Include="GeneratedFiles\ui_RenderParamsTab.h" />
+    <ClInclude Include="glsl.h" />
+    <ClInclude Include="helpers\CameraHelper.h" />
+    <ClInclude Include="models\CameraModel.h" />
+    <ClInclude Include="models\DrawObjectsModel.h" />
+    <ClInclude Include="models\FilterUiModel.h" />
+    <ClInclude Include="models\FXModel.h" />
+    <ClInclude Include="models\OpenGLModel.h" />
+    <ClInclude Include="models\SpriteAnimated.h" />
+    <ClInclude Include="models\TeamColorsModel.h" />
+    <ClInclude Include="models\Uniforms.h" />
+    <ClInclude Include="OpenGlMain.h" />
+    <ClInclude Include="particles\Particles.h" />
+    <ClInclude Include="particles\ParticleDataTypes.h" />
+    <ClInclude Include="particles\ParticleManager.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="tinyobjloader\tiny_obj_loader.h" />
+    <ClInclude Include="VersionsEnums.h" />
+    <CustomBuild Include="ui\EditorWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EditorWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EditorWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EditorWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EditorWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\EmojiModelTab.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EmojiModelTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EmojiModelTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EmojiModelTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EmojiModelTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\Model3DTab.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Model3DTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing Model3DTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Model3DTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing Model3DTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\RenderParamsTab.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RenderParamsTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing RenderParamsTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RenderParamsTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing RenderParamsTab.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <ClInclude Include="utils\JSONVectorReader.h" />
+    <ClInclude Include="utils\ModelUtil.h" />
+    <ClInclude Include="utils\Resolutions.h" />
+    <ClInclude Include="utils\sceneSwitchDetector.h" />
+    <ClInclude Include="utils\stb_image.h" />
+    <ClInclude Include="utils\textfile.h" />
+    <ClInclude Include="utils\trackball.h" />
+    <ClInclude Include="tracker\FaceTracker.h" />
+    <ClInclude Include="helpers\TrackerHelper.h" />
+    <CustomBuild Include="ui\LiveCamWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LiveCamWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing LiveCamWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LiveCamWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing LiveCamWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <ClInclude Include="utils\CVImageUtil.h" />
+    <CustomBuild Include="utils\ImageSequenceUtil.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ImageSequenceUtil.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ImageSequenceUtil.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ImageSequenceUtil.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ImageSequenceUtil.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <ClInclude Include="utils\DrawUtil.h" />
+    <ClInclude Include="utils\ModelLoader.h" />
+    <ClInclude Include="utils\PointCalcUtil.h" />
+    <CustomBuild Include="workers\CameraWorker.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CameraWorker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing CameraWorker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CameraWorker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing CameraWorker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\CVImageWidgetOrg.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CVImageWidgetOrg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing CVImageWidgetOrg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CVImageWidgetOrg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing CVImageWidgetOrg.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_LiveCamWindow.h" />
+    <CustomBuild Include="ui\OutputWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing OutputWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_OutputWindow.h" />
+    <ClInclude Include="interfaces\UiInterface.h" />
+    <CustomBuild Include="ui\CVImageWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CVImageWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing CVImageWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -D_DEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CVImageWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DADDITIONAL_FALSE_FILTER -DUSE_OLD_RECOGNIZER -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -DWIN32 -DDNDEBUG -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing CVImageWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WIN32_WINNT=0x0501 -DWIN32_LEAN_AND_MEAN -DWIN32 -DNDEBUG -D_CONSOLE -D_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_MULTIMEDIA_LIB -D_UNICODE -DUNICODE  "-I.\..\..\boost_1_63_0" "-I.\..\boost_1_63_0" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I.\..\freeglut\include" "-I.\..\include" "-I.\..\opencv\build\include" "-I.\..\eigen-3.3.4" "-I." "-I.\GeneratedFiles" "-I.\fx" "-I.\utils" "-I$(QTDIR)\include\QtMultimedia"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\LiveCamWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\OutputWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\res.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <FileType>Document</FileType>
+      <DeploymentContent>false</DeploymentContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\EditorWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\res2.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\ui\images\BG-cropped.png;.\ui\images\BG-solid.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);.\ui\images\BG-cropped.png;.\ui\images\BG-solid.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\ui\images\BG-cropped.png;.\ui\images\BG-solid.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);.\ui\images\BG-cropped.png;.\ui\images\BG-solid.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\EmojiModelTab.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\Model3DTab.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\RenderParamsTab.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <None Include="ui_config.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties lupdateOnBuild="1" Qt5Version_x0020_Win32="5.9.1 x86" Qt5Version_x0020_x64="5.11.1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

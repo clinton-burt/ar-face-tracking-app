@@ -1,0 +1,374 @@
+{
+  "filters": [
+	{
+      "title": "bucs-helmet",
+	  "JSONsource": "./assets/fx/bucs/bucs-helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "bucs-jerseys",
+	  "JSONsource": "./assets/fx/bucs/bucs-jerseys.json",
+      "icon": ""
+	},
+	{
+      "title": "bucs-pirate-patch",
+	  "JSONsource": "./assets/fx/bucs/bucs-pirate-patch.json",
+      "icon": ""
+	},
+	{
+      "title": "bucs-player-emoji",
+	  "JSONsource": "./assets/fx/bucs/bucs-player-emoji.json",
+      "icon": ""
+	},
+	{
+      "title": "bucs-tooth",
+	  "JSONsource": "./assets/fx/bucs/bucs-tooth.json",
+      "icon": ""
+	},
+	{
+      "title": "cowboys_all_filters",
+	  "JSONsource": "./assets/fx/cowboys/cowboys_all_filters.json",
+      "icon": ""
+	},
+	{
+      "title": "dolphins_face_paint",
+	  "JSONsource": "./assets/fx/dolphins/dolphins_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "dolphins_helmet",
+	  "JSONsource": "./assets/fx/dolphins/dolphins_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "dolphins_mascot",
+	  "JSONsource": "./assets/fx/dolphins/dolphins_mascot.json",
+      "icon": ""
+	},
+	{
+      "title": "eagles-helmet",
+	  "JSONsource": "./assets/fx/eagles/eagles-helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "emojis",
+	  "JSONsource": "./assets/fx/example/emojis.json",
+      "icon": ""
+	},
+	{
+      "title": "team_face_paint",
+	  "JSONsource": "./assets/fx/example/team_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "team_helmet",
+	  "JSONsource": "./assets/fx/example/team_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "team_mascot",
+	  "JSONsource": "./assets/fx/example/team_mascot.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-elf-hat",
+	  "JSONsource": "./assets/fx/falcons/falcons-elf-hat.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-freddy",
+	  "JSONsource": "./assets/fx/falcons/falcons-freddy.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-helmet",
+	  "JSONsource": "./assets/fx/falcons/falcons-helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-party-hat-2",
+	  "JSONsource": "./assets/fx/falcons/falcons-party-hat-2.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-party-hat-3",
+	  "JSONsource": "./assets/fx/falcons/falcons-party-hat-3.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-party-hat",
+	  "JSONsource": "./assets/fx/falcons/falcons-party-hat.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-santa-hat-thin",
+	  "JSONsource": "./assets/fx/falcons/falcons-santa-hat-thin.json",
+      "icon": ""
+	},
+	{
+      "title": "falcons-santa-hat-hat",
+	  "JSONsource": "./assets/fx/falcons/falcons-santa-hat.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_afro",
+	  "JSONsource": "./assets/fx/jets/jets_afro.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_face_paint",
+	  "JSONsource": "./assets/fx/jets/jets_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_fu_man_chu",
+	  "JSONsource": "./assets/fx/jets/jets_fu_man_chu.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_hipster_beard",
+	  "JSONsource": "./assets/fx/jets/jets_hipster_beard.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_mohawk",
+	  "JSONsource": "./assets/fx/jets/jets_mohawk.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_mullet",
+	  "JSONsource": "./assets/fx/jets/jets_mullet.json",
+      "icon": ""
+	},
+	{
+      "title": "jets_zz_top",
+	  "JSONsource": "./assets/fx/jets/jets_zz_top.json",
+      "icon": ""
+	},
+	{
+      "title": "julio_the_octopus",
+	  "JSONsource": "./assets/fx/marlins/julio_the_octopus.json",
+      "icon": ""
+	},
+	{
+      "title": "spike_the_mascot",
+	  "JSONsource": "./assets/fx/marlins/spike_the_mascot.json",
+      "icon": ""
+	},
+	{
+      "title": "stanton_helmet",
+	  "JSONsource": "./assets/fx/marlins/stanton_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "ny_giants_beckham_hair",
+	  "JSONsource": "./assets/fx/ny_giants/ny_giants_beckham_hair.json",
+      "icon": ""
+	},
+	{
+      "title": "ny_giants_face_paint",
+	  "JSONsource": "./assets/fx/ny_giants/ny_giants_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "ny_giants_helmet",
+	  "JSONsource": "./assets/fx/ny_giants/ny_giants_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "ny_giants_landon_braids",
+	  "JSONsource": "./assets/fx/ny_giants/ny_giants_landon_braids.json",
+      "icon": ""
+	},
+	{
+      "title": "ny_giants_teeth",
+	  "JSONsource": "./assets/fx/ny_giants/ny_giants_teeth.json",
+      "icon": ""
+	},
+	{
+      "title": "reds_face_paint",
+	  "JSONsource": "./assets/fx/reds/reds_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "auburn_face_paint",
+	  "JSONsource": "./assets/fx/universities/auburn/auburn_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "kansas_jayhawks_helmet",
+	  "JSONsource": "./assets/fx/universities/kansas_jayhawks/kansas_jayhawks_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "kansas_jayhawks_mascot",
+	  "JSONsource": "./assets/fx/universities/kansas_jayhawks/kansas_jayhawks_mascot.json",
+      "icon": ""
+	},
+	{
+      "title": "oklahoma_sooner_face_paint",
+	  "JSONsource": "./assets/fx/universities/oklahoma_sooners/oklahoma_sooner_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "oklahoma_sooner_helmet",
+	  "JSONsource": "./assets/fx/universities/oklahoma_sooners/oklahoma_sooner_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "oklahoma_sooner_visor",
+	  "JSONsource": "./assets/fx/universities/oklahoma_sooners/oklahoma_sooner_visor.json",
+      "icon": ""
+	},
+	{
+      "title": "uoi_face_paint",
+	  "JSONsource": "./assets/fx/universities/uoi/uoi_face_paint.json",
+      "icon": ""
+	},
+	{
+      "title": "vikings_helga",
+	  "JSONsource": "./assets/fx/vikings/vikings_helga.json",
+      "icon": ""
+	},
+	{
+      "title": "vikings_helmet",
+	  "JSONsource": "./assets/fx/vikings/vikings_helmet.json",
+      "icon": ""
+	},
+	{
+      "title": "vikings_moss",
+	  "JSONsource": "./assets/fx/vikings/vikings_moss.json",
+      "icon": ""
+	},
+	{
+      "title": "yankees_disguise",
+	  "JSONsource": "./assets/fx/yankees/yankees_disguise.json",
+      "icon": ""
+	},
+	{
+      "title": "yankees_judge",
+	  "JSONsource": "./assets/fx/yankees/yankees_judge.json",
+      "icon": ""
+	},
+	{
+      "title": "yankees_kraken",
+	  "JSONsource": "./assets/fx/yankees/yankees_kraken.json",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/bills/bills_helmet.json",
+      "title": "bills_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/chargers/chargers_helmet.json",
+      "title": "chargers_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/chargers/face-swap-modules.json",
+      "title": "face-swap-modules",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/detroit_lions/detroit_face_paint.json",
+      "title": "detroit_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/detroit_lions/detroit_helmet.json",
+      "title": "detroit_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/falcons/falcons_face_paint.json",
+      "title": "falcons_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/la_rams/rams_face_paint.json",
+      "title": "rams_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/la_rams/rams_face_paintasd.json",
+      "title": "rams_face_paintasd",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/la_rams/rams_helmet.json",
+      "title": "rams_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/la_rams/rams_horns.json",
+      "title": "rams_horns",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/lightning/lightning_face_paint.json",
+      "title": "lightning_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/panthersHelmet/panthers-helmet.json",
+      "title": "panthers-helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/phillies/phillies_face_paint.json",
+      "title": "phillies_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/san_francisco_49ers/49ers_face_paint.json",
+      "title": "49ers_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/san_francisco_49ers/49ers_helmet.json",
+      "title": "49ers_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/universities/auburn/auburn_helmet.json",
+      "title": "auburn_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/universities/georgia/georgia_helmet.json",
+      "title": "georgia_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/universities/georgia/georgia_mascot.json",
+      "title": "georgia_mascot",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/universities/uoi/uoi_helmet.json",
+      "title": "uoi_helmet",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/washington_capitals/wc_face_paint.json",
+      "title": "wc_face_paint",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/washington_capitals/wc_player_emojis.json",
+      "title": "wc_player_emojis",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/yankees/yankees_bobble_boy.json",
+      "title": "yankees_bobble_boy",
+      "icon": ""
+	},
+	{
+	  "JSONsource": "./assets/fx/yankees/yankees_bobble_hair.json",
+      "title": "yankees_bobble_hair",
+      "icon": ""
+	}
+	]
+}

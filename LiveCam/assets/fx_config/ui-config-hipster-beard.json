@@ -1,0 +1,12 @@
+{
+    "filters": [{
+        "id": 69,
+        "title": "Hipster Beard Filter",
+        "icon": "assets/icons/beardIcon.png"
+    },
+	{
+        "id": 70,
+        "title": "Jets Mohawk Filter",
+        "icon": "assets/icons/mohawkIcon.png"
+    }]
+}

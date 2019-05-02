@@ -1,0 +1,76 @@
+{
+  "filters": [
+    {
+      "id": 65,
+      "title": "Cowboys Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 72,
+      "title": "Bills Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 71,
+      "title": "Cowboys All Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 7,
+      "title": "Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 68,
+      "title": "Bucs Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 80,
+      "title": "Ravens Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 88,
+      "title": "Ravens New Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 48,
+      "title": "Simple Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 24,
+      "title": "Yankees Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 67,
+      "title": "Falcons Camo Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 36,
+      "title": "Panthers Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 3,
+      "title": "Reds Cheek Logo Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    }
+  ]
+}

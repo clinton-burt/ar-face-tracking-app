@@ -1,0 +1,80 @@
+{
+    "filters": [
+	{
+	    "id": 35,
+        "title": "Emoji Filter",
+        "icon": "assets/images/emoti/Asset 3@20x.png",
+        "subMenu": "page_cam_emoti"
+    }, {
+        "id": 7,
+        "title": "Face Paint Filter",
+        "icon": "assets/icons/face_paint_icon.png",
+        "subMenu": "page_cam_team_face_paints"
+    }, {
+    
+        "id": 12,
+        "title": "Helmet Filter",
+        "icon": "assets/icons/football_helmet_icon.png",
+        "subMenu": "page_cam_team_football_helmets"
+    }, {
+        "id": 13,
+        "title": "Dragon Filter",
+        "icon": "assets/icons/dragon_icon.png",
+        "subMenu": ""
+    }, {
+        "id": 4,
+        "title": "3D Dog Filter",
+        "icon": "assets/icons/BTN DOG CAM.png",
+        "subMenu": ""
+    },{
+        "id": 21,
+        "title": "Marlins Hat Filter",
+        "icon": "assets/icons/Marlins_hat_v002.png",
+        "subMenu": ""
+	}, {
+        "id": 16,
+        "title": "Hockey Helmet Filter",
+        "icon": "assets/icons/hockey_helmet_icon.png",
+        "subMenu": ""
+	},{
+        "id": 8,
+        "title": "Player Emoji Filter",
+        "icon": "assets/icons/player_emoji_icon.png",
+        "subMenu": "page_cam_emoji_players"
+    }, {
+        "id": 9,
+        "title": "Kissy Lips Filter",
+        "icon": "assets/icons/lips_icon.png",
+        "subMenu": "page_cam_kissy_lips"
+    }, {
+        "id": 3,
+        "title": "Painted Cheeks Filter",
+        "icon": "assets/icons/logo.png",
+        "subMenu": ""
+    }, {
+        "id": 15,
+        "title": "3D Emoji Filter",
+        "icon": "assets/icons/sunglasses_icon.png",
+        "subMenu": ""
+    }, {
+        "id": 6,
+        "title": "Face Pinch Filter",
+        "icon": "assets/icons/BTN DISTORT.png",
+        "subMenu": ""
+    },{
+        "id": 24,
+        "title": "Yankees Face Paint",
+        "icon": "assets/icons/New_York_Yankees_icon.png",
+        "subMenu": ""
+    },{
+        "id": 27,
+        "title": "Conference Logo Filter",
+        "icon": "assets/icons/conferenceLogo.png",
+        "subMenu": ""
+  	},{
+        "id": 50,
+        "title": "NYC Football Pigeon Mask",
+        "icon": "assets/icons/pigeonMaskIcon.png",
+        "subMenu": ""
+  	}]
+}

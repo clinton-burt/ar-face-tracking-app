@@ -1,0 +1,87 @@
+#version 400
+in vec3 Position;
+in vec3 Normal;
+in vec3 Tangent;
+in vec3 Bitangent;
+in vec2 TexCoord;
+
+uniform  vec4 lightPos;
+
+uniform sampler2D Texture;
+uniform sampler2D AdditionalTexture;
+uniform sampler2D NormalMap;
+
+uniform mat3 LogoLeftTransformMatrix;
+uniform mat3 LogoRightTransformMatrix;
+
+uniform vec4 cameraPos;
+uniform vec3 ambientLight;
+uniform vec3 specularLight;
+
+
+void main() {
+
+    vec3 ambAndDiff, spec;
+	
+
+	mat3 TBN = transpose(mat3(
+        normalize(Tangent),
+        normalize(Bitangent),
+        normalize(Normal)
+    )); 
+	
+	vec3 cameraPosPos = TBN * cameraPos.xyz;
+
+    vec3 EyeDirection_tangentspace =  TBN * cameraPosPos;	
+	vec3 TextureNormal_tangentspace = normalize(texture( NormalMap, TexCoord ).rgb*2.0 - 1.0);
+	
+	vec3 norm = TextureNormal_tangentspace;
+
+	vec3 s = TBN * normalize(vec3(lightPos) - Position);
+
+    vec3 r = reflect( -s, norm );
+
+    float sDotN = max( dot(s,norm), 0.0 );
+    vec3 diffuse = vec3(0.4, 0.4, 0.4) * sDotN;
+    spec = vec3(0.0);
+
+    if( sDotN > 0.0 )
+    {
+        spec = specularLight*pow(max( dot(r, normalize(cameraPosPos)), 0.0 ), 100.0);
+    }
+    ambAndDiff = ambientLight + diffuse;
+	
+	
+	vec3 logoLeftTexCoord3d = (LogoLeftTransformMatrix * vec3(TexCoord, 1.0));
+    vec2 logoLeftTexCoord2d = vec2(logoLeftTexCoord3d.x / logoLeftTexCoord3d.z, logoLeftTexCoord3d.y / logoLeftTexCoord3d.z);
+	
+	vec3 logoRightTexCoord3d = (LogoRightTransformMatrix * vec3(TexCoord, 1.0));
+    vec2 logoRightTexCoord2d = vec2(logoRightTexCoord3d.x / logoRightTexCoord3d.z, logoRightTexCoord3d.y / logoRightTexCoord3d.z);
+	
+	
+	vec4 leftLogoColor = texture2D(AdditionalTexture, logoLeftTexCoord2d).rgba;
+	
+	if (logoLeftTexCoord2d.x > 0.5)
+	{
+		leftLogoColor = vec4(0.0, 0.0, 0.0, 0.0);
+	}
+	
+	
+	vec4 rightLogoColor = texture2D(AdditionalTexture, logoRightTexCoord2d).rgba;
+	
+	
+	if (logoRightTexCoord2d.x < 0.5)
+	{
+		rightLogoColor = vec4(0.0, 0.0, 0.0, 0.0);
+	}
+
+	vec4 logoColor = leftLogoColor + rightLogoColor;
+	
+
+	vec4 texColor = vec4((1.0-logoColor.a)*texture2D(Texture, TexCoord).rgb + logoColor.a*logoColor.rgb, 1.0);
+	
+	texColor = vec4(ambAndDiff, 1.0)*texColor + vec4(spec, 1.0);
+
+	gl_FragColor = texColor;
+
+}

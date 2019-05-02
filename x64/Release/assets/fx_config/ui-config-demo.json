@@ -1,0 +1,186 @@
+{
+	"filters": [{
+		"title": "Emoji Filter",
+		"icon": "./assets/fx/emoji/Asset 3@20x.png",
+		"JSONsource": "./assets/fx/emoji/emojis.json"
+	},
+	{
+		"id": 4,
+		"title": "3D Dog Filter",
+		"icon": "assets/icons/BTN DOG CAM.png",
+		"subMenu": ""
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/billy_marlin.json",
+		"title": "Billy Marlin Filter",
+		"icon": "assets/icons/billyMarlin.png"
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/angel_the_crab.json",
+		"title": "Angel the Crab Filter",
+		"icon": "assets/icons/emoji_filters_icon.png"
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/bob_the_shark.json",
+		"title": "Bob the Shark Filter",
+		"icon": "assets/icons/bobTheSharkIcon.png"
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/julio_the_octopus.json",
+		"title": "Julio the Octopus Filter",
+		"icon": "assets/icons/julioTheOctopusIcon.png"
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/spike_the_mascot.json",
+		"title": "Spike the Maskot Filter",
+		"icon": "assets/icons/spikeTheMascotIcon.png"
+	},
+	{
+		"id": 63,
+		"title": "Cowboys Rowdy Filter",
+		"icon": "./assets/icons/rowdy_icon.png",
+		"subMenu": ""
+	},
+	{
+		"JSONsource": "./assets/fx/canadians/facepaint_Camo.json",
+		"icon": "./assets/fx/canadians/icons/facepaint.png"
+	},
+	{
+		"JSONsource": "./assets/fx/canadians/facepaint_RedWhiteBlue.json",
+		"icon": "./assets/fx/canadians/icons/facepaint.png"
+	},
+	{
+		"title": "Utah Jazz Face Paint Filter",
+		"icon": "",
+		"JSONsource": "./assets/fx/utah_jazz/utah-jazz-face-paint-new.json"
+	},
+	{
+		"title": "Christmas Hats",
+		"JSONsource": "./assets/fx/christmas_pack/christmas_santa_hats.json"
+	},
+	{
+		"title": "Christmas SnowMan",
+		"JSONsource": "./assets/fx/christmas_pack/christmas_snow_man.json"
+	},
+	{
+		"title": "Christmas Rudolfs",
+		"JSONsource": "./assets/fx/christmas_pack/christmas_rudolfs.json"
+	},
+	{
+		"title": "Christmas Tree Head",
+		"JSONsource": "./assets/fx/christmas_pack/christmas_tree_head.json"
+	},
+	{
+		"title": "Christmas Emojis",
+		"JSONsource": "./assets/fx/christmas_pack/christmas_animated_emoji_atlas.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/frankestein-filter.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/zombie-filter.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/dracula-filter.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/pumpkin-filter.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/halloween-witch-hat.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/halloween-flowers.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/scream-mask.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/jasons-mask.json"
+	},
+	{
+		"JSONsource": "./assets/fx/halloween/freddy-kruger-mask.json"
+	},
+	{
+		"title": "Oilers Hockey Helmet Filter",
+		"JSONsource": "./assets/fx/edmonton_oilers/edmonton_oilers_hockey_helmet.json"
+	},
+	{
+		"title": "Oilers Goalie Helmet Filter",
+		"JSONsource": "./assets/fx/edmonton_oilers/edmonton_oilers_goalie_helmet.json"
+	},
+	{
+		"title": "Georgia Helmet Filter",
+		"icon": "./assets/fx/universities/georgia/icons/g_helmet.png",
+		"JSONsource": "./assets/fx/universities/georgia/georgia_helmet.json"
+	},
+	{
+		"JSONsource": "./assets/fx/marlins/stanton_helmet.json",
+		"title": "Stanton Helmet Filter",
+		"icon": "assets/icons/stantonHelmet_v002.png"
+	},
+	{
+		"JSONsource": "./assets/fx/hockey_bucket/hockey_bucket_all_filters.json",
+		"icon": "./assets/fx/hockey_bucket/icons/bucket.png"
+	},
+	{
+		"JSONsource": "./assets/fx/okc_thunder/okc_beards.json"
+	},
+	{
+		"title": "Les Canadiens Beard Filter",
+		"icon": "./assets/fx/hockey_bucket/icons/beardIcon.png",
+		"JSONsource": "./assets/fx/hockey_bucket/hipster_beard.json"
+	},
+	{
+		"title": "Les Canadiens Long Beard Filter",
+		"icon": "./assets/fx/hockey_bucket/icons/zz_top.png",
+		"JSONsource": "./assets/fx/hockey_bucket/zz_top.json"
+	},
+	{
+		"title": "Les Canadiens 2D Mixed Filters",
+		"icon": "./assets/fx/canadians/mustache_final/muchi 1.png",
+		"JSONsource": "./assets/fx/canadians/beard_mixed_2d.json"
+	},
+	{
+		"title": "Les Canadiens 2D Mixed Filters",
+		"icon": "./assets/fx/hockey_bucket/icons/beard.png",
+		"JSONsource": "./assets/fx/hockey_bucket/mixed_2d.json"
+	},
+	{
+		"JSONsource": "./assets/fx/okc_thunder/okc_basketball_head.json"
+	},
+	{
+		"title": "OKC Electric Rumble Helmet",
+		"icon": "./assets/fx/okc_thunder/icons/okc_tesla_helmet_red.png",
+		"id": 81
+	},
+	{
+		"id": 61,
+		"title": "Tesla Helmet Filter",
+		"icon": "assets/icons/teslaHelmet.png",
+		"subMenu": ""
+	},
+	{
+		"title": "Les Canadiens Glasses Filter",
+		"icon": "./assets/fx/canadians/icons/red_glasses.png",
+		"JSONsource": "./assets/fx/canadians/glasses.json"
+	},
+	{
+		"JSONsource": "./assets/fx/baseball_cap/baseball_cap.json"
+	},
+	{
+		"title": "Jerseys",
+		"icon": "./assets/fx/bucs/jerseys/jersey_icon.png",
+		"JSONsource": "./assets/fx/bucs/bucs-jerseys.json"
+	},
+	{
+		"title": "Full Face Helmet",
+		"icon": "./assets/fx/fullFaceHelmet/white_icon.png",
+		"JSONsource": "./assets/fx/fullFaceHelmet/full_face_helmet.json"
+	},
+	{
+		"title": "Puck Hat",
+		"icon": "./assets/fx/puck_hat/puck_hat_icon.png",
+		"JSONsource": "./assets/fx/puck_hat/puck_hat.json"
+	}]
+}

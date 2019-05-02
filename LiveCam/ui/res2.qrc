@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/res2/">
+    <file>images/BG-cropped.png</file>
+    <file>images/BG-solid.png</file>
+  </qresource>
+</RCC>

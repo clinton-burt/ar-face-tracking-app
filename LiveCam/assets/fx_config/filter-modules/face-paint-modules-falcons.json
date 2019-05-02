@@ -1,0 +1,22 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/icons/black_red.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.000000, 0.0, 0.0, 0.7 ],
+          "rightAmbient": [ 0.8, 0.0, 0.0, 0.7 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/icons/red.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.8, 0.0, 0.0, 0.7  ],
+          "rightAmbient": [ 0.8, 0.0, 0.0, 0.7  ]
+        }
+      ]
+    }
+  ]
+}

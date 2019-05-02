@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/bucs.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.203922, 0.192157, 0.172549, 0.7 ],
+          "rightAmbient": [ 0.854902, 0.129412, 0.152941, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

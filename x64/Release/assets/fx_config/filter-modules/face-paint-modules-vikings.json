@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/vikings.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.309804, 0.149020, 0.517647, 0.7 ],
+          "rightAmbient": [ 1.000000, 0.776471, 0.184314, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

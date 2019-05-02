@@ -1,0 +1,53 @@
+#version 400
+
+in vec3 Position;
+in vec3 Normal;
+in vec2 TexCoord;
+
+uniform  vec4 lightPos;
+uniform sampler2D Texture;
+uniform samplerCube Skybox;
+
+uniform vec4 cameraPos;
+uniform vec3 ambientLight;
+uniform vec3 specularLight;
+
+
+void phongModel( vec3 position, vec3 norm, out vec3 ambAndDiff, out vec3 spec ) 
+{
+    vec3 s = normalize(vec3(lightPos) - position);
+    vec3 v = normalize(-position.xyz);
+    vec3 r = reflect( -s, norm );
+
+    float sDotN = max( dot(s,norm), 0.0 );
+    vec3 diffuse = vec3(0.8, 0.8, 0.8) * sDotN;
+    spec = vec3(0.0);
+
+    if( sDotN > 0.0 )
+    {
+		vec3 cameraPosPos = cameraPos.xyz;
+        spec = specularLight*pow(max( dot(r, normalize(cameraPosPos)), 0.0 ), 80.0);
+    }
+    ambAndDiff = ambientLight + diffuse;
+}
+
+void main() {
+    vec3 ambAndDiff, spec;
+	vec3 nx = normalize(Normal);	
+	phongModel(Position, nx, ambAndDiff, spec);
+	
+	vec3 cameraPosPos = cameraPos.xyz;
+    vec3 I = normalize(Position - cameraPosPos);
+    vec3 R = reflect(I, nx);
+
+
+    vec4 textureColor = texture2D(Texture, TexCoord).rgba;
+
+	vec4 texColor = vec4(0.2*(texture(Skybox, R).xyz) + 0.8* textureColor.a * textureColor.rgb, 1.0);
+	
+	texColor.r = texColor.r * ambAndDiff.r + spec.r;
+	texColor.g = texColor.g * ambAndDiff.g + spec.g;
+	texColor.b = texColor.b * ambAndDiff.b + spec.b;
+	
+	gl_FragColor = texColor;
+}

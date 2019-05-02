@@ -1,0 +1,14 @@
+ResizeImages.py
+
+This is a short python script that takes a folder of images and resizes all the images with .png only extension and saves the result.
+This can be useful for animation frames size reducing before packing them into a texture atlas to prevent GL_MAX_TEXTURE_SIZE limit violation.
+
+This is old BuildAtlasTexture_Original_DontUse.py script description above
+
+Usage of BuildAtlasTextureSimple:
+
+0) script works only with .png extension
+1) set sizeFactor in the script file
+2) put your images into the "input" folder
+3) start the script
+4) check the "output"

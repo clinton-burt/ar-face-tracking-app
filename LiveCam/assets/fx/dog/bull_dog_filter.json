@@ -1,0 +1,91 @@
+{
+
+  "iconPath": "./assets/fx/dog/icons/bulldog.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.8,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.3, 0 ]
+    },
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/dog/bull_dog/Ears.obj",
+      "modelShift": [ 0, 0.6, 0.4 ],
+      "modelScale": 1
+    },
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/dog/bull_dog/Snout.obj",
+      "modelShift": [ 0, -0.3, 0.4 ],
+      "modelScale": 0.9
+    },
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/dog/bull_dog/Collar.obj",
+      "modelShift": [ 0, -1, 0 ],
+      "modelScale": 1
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 1, 1, 1 ],
+        [ "specularPower", 21 ]
+      ]
+    }
+  ],
+
+  "initialModules": [ 0, 0, 0, 0, 0 ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/dog/icons/bulldog.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/dog/bull_dog/tex/EarsSurface_Color.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/dog/bull_dog/tex/SnoutSurface_Color.png"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 1 ],
+          "modelTextures": [       
+            "./assets/fx/dog/bull_dog/tex/CollarSurface_Color.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

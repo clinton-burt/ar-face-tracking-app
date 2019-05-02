@@ -1,0 +1,254 @@
+{
+	"showLocation": "true",
+	
+	"quadSize": 2,
+	
+	"effectWidth": 100,
+
+	"emitters":
+	[
+	{
+		"maxParticles": 100,
+		"preloading": 100,
+		
+		"texturePath": "./assets/particles/textures/spark-white.png",
+		"textureSize": [ 1, 1 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": 0
+			},
+			{
+				"t": 1,
+				"value": 100
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 0, 0 ]
+		},
+		
+		"lifeTime":
+		{
+			"value": 1
+		},
+		
+		"coords_system": "PARTICLE_EFFECT",
+		"coords_axis_system": "PARTICLE_EFFECT",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ -50, 0, 0 ]
+			},
+			{
+				"t": 1,
+				"value": [ 50, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"value": [ 0, 0, 0 ]
+		},
+		
+		"scale":
+		{
+			"value": 1
+		},
+		
+		"color":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ 1, 0, 1, 1 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ 1, 0, 0, 1 ]
+			}
+			]
+		}
+	},
+	{
+		"maxParticles": 100,
+		"preloading": 100,
+		
+		"texturePath": "./assets/particles/textures/spark-white.png",
+		"textureSize": [ 1, 1 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": 0
+			},
+			{
+				"t": 1,
+				"value": 100
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 0, 0 ]
+		},
+		
+		"lifeTime":
+		{
+			"value": 1
+		},
+		
+		"coords_system": "PARTICLE_EFFECT",
+		"coords_axis_system": "PARTICLE_EFFECT",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ 0, 50, 0 ]
+			},
+			{
+				"t": 1,
+				"value": [ 0, -50, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"value": [ 0, 0, 0 ]
+		},
+		
+		"scale":
+		{
+			"value": 1
+		},
+		
+		"color":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ 1, 1, 0, 1 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ 0, 1, 0, 1 ]
+			}
+			]
+		}
+	},
+	{
+		"maxParticles": 100,
+		"preloading": 100,
+		
+		"texturePath": "./assets/particles/textures/spark-white.png",
+		"textureSize": [ 1, 1 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": 0
+			},
+			{
+				"t": 1,
+				"value": 100
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 0, 0 ]
+		},
+		
+		"lifeTime":
+		{
+			"value": 1
+		},
+		
+		"coords_system": "PARTICLE_EFFECT",
+		"coords_axis_system": "PARTICLE_EFFECT",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ 0, 0, -50 ]
+			},
+			{
+				"t": 1,
+				"value": [ 0, 0, 50 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"value": [ 0, 0, 0 ]
+		},
+		
+		"scale":
+		{
+			"value": 1
+		},
+		
+		"color":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": [ 0, 1, 1, 1 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ 0, 0, 1, 1 ]
+			}
+			]
+		}
+	}
+	]
+}

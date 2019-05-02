@@ -1,0 +1,20 @@
+#version 400
+layout (location = 0) in vec3 VertexPosition;
+layout (location = 1) in vec3 VertexNormal;
+
+out vec3 Position;
+out vec3 Normal;
+
+uniform mat4 ModelViewMatrix;
+uniform mat4 ProjectionMatrix;
+
+void main()
+{
+ mat4 mvp = ProjectionMatrix * ModelViewMatrix;
+ 
+ vec4 tnorm = ModelViewMatrix * vec4(VertexNormal,0.0) ;
+ Normal = normalize(vec3(tnorm));
+ 
+ Position = vec3( ModelViewMatrix * vec4(VertexPosition,1.0) );
+ gl_Position = mvp * vec4(VertexPosition,1.0);
+}

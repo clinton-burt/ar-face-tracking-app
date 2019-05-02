@@ -1,0 +1,353 @@
+{
+	"transform version": "V1",
+    "JSON root": "true",
+    "title": "Marlins",
+    "iconPath": "GPE019_Billy_Emoji.png",
+    "models": [
+        {
+            "name": "Bob the Shark",
+            "type": "EmojiModel"
+        },
+        {
+            "name": "Julio the Octopus",
+            "type": "3DModel",
+            "OBJ": "JuliotheOctopus_v003_original.obj",
+            "MTL": "JuliotheOctopus_v003.mtl",
+            "modelShift": [
+                "0",
+                "0",
+                "-0.100000001"
+            ],
+            "modelScale": "1.79999995"
+        }
+    ],
+    "renderParams": [
+        {
+            "vertexShader": "orthoVertexShader.txt",
+            "fragmentShader": "orthoFragmentShader.txt",
+            "cullFace": "false",
+            "blend": "true",
+            "uniforms": ""
+        },
+        {
+            "vertexShader": "noTextureVertexShader.txt",
+            "fragmentShader": "noTexturePhongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0.800000012",
+                    "0.800000012",
+                    "0.800000012"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "specularPower",
+                    "64.7570038"
+                ]
+            ]
+        },
+        {
+            "vertexShader": "noTextureVertexShader.txt",
+            "fragmentShader": "noTexturePhongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0.291764706",
+                    "0.401568651",
+                    "0.188235298"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "specularPower",
+                    "57.0040016"
+                ]
+            ]
+        },
+        {
+            "vertexShader": "simpleVertexShader.txt",
+            "fragmentShader": "phongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0.800000012",
+                    "0.800000012",
+                    "0.800000012"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "specularPower",
+                    "65.8499985"
+                ]
+            ]
+        },
+        {
+            "vertexShader": "simpleVertexShader.txt",
+            "fragmentShader": "phongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0.800000012",
+                    "0.800000012",
+                    "0.800000012"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "specularPower",
+                    "60"
+                ]
+            ]
+        },
+        {
+            "vertexShader": "noTextureVertexShader.txt",
+            "fragmentShader": "noTexturePhongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "specularPower",
+                    "57.0040016"
+                ]
+            ]
+        }
+    ],
+    "initialModules": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+    ],
+    "modules": [
+        {
+            "iconPath": "GPE019_Bob_EmojiHead.png",
+            "suits": [
+                {
+                    "emojiTexture": "GPE019_Bob_EmojiHead.png",
+                    "symmetricState": "1",
+                    "emojiRotation": "true",
+                    "emojiScale": [
+                        "1.73000002",
+                        "1.73000002"
+                    ],
+                    "renderParamsID": "0"
+                },
+                {
+                    "visible": "false"
+                }
+            ]
+        },
+        {
+            "iconPath": "GPE019_Julio_EmojiHead.png",
+            "suits": [
+                {
+                    "visible": "false"
+                },
+                {
+                    "modelTextures": [
+                        "",
+                        "",
+                        "",
+                        "JulioOctopus_eyes_Color_1.png",
+                        "JulioOctopus_eyes_Color_1.png",
+                        "OctopusSkin_v2.png",
+                        ""
+                    ],
+                    "renderParamsIDs": [
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "3",
+                        "4",
+                        "5"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/bills/icons/bills.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.854902, 0.129412, 0.152941, 0.7 ],
+          "rightAmbient": [ 0.000000, 0.325490, 0.584314, 0.7 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/icons/sabers_icon.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.0, 0.17, 0.38, 0.7 ],
+          "rightAmbient": [ 0.98, 0.73, 0.18, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

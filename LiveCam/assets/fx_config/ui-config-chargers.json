@@ -1,0 +1,42 @@
+{
+  "filters": [
+
+    {
+      "id": 35,
+      "title": "Chargers Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 48,
+      "title": "Chargers Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 4,
+      "title": "Chargers 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+
+      "id": 12,
+      "title": "Chargers Helmet Filter",
+      "icon": "assets/icons/football_helmet_chargers_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 61,
+      "title": "Chargers Tesla Helmet Filter",
+      "icon": "assets/icons/teslaHelmet.png",
+      "subMenu": ""
+    },
+    {
+      "id": 10,
+      "title": "Chargers Face Swap Filter",
+      "icon": "assets/icons/face_swap_icon.png",
+      "subMenu": ""
+    }
+  ]
+}

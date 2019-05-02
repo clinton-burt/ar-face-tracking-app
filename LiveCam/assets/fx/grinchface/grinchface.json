@@ -1,0 +1,88 @@
+{	
+	"iconPath": "./assets/fx/grinchface/grinchface.png",
+
+  "models": [
+    {
+      "type": "DepthMask",
+      "modelScale": 1.9,
+      "draw2DMask": "false",
+      "modelShift": [ 0, -0.2, 0.06 ]
+    },
+    {
+      "type": "3DModel",
+      "OBJ": "./assets/fx/grinchface/hat.obj",
+      "modelScale": 1.6,
+      "modelShift": [ 0.1, 0, 0.15 ]
+    },
+    {
+      "type": "RightBrow3DModel",
+      "OBJ": "./assets/fx/grinchface/right_eyebrow.obj",
+      "modelShift": [ 0.2, 0.3, 0.18 ],
+      "modelScale": 0.7
+    },
+    {
+      "type": "LeftBrow3DModel",
+      "OBJ": "./assets/fx/grinchface/left_eyebrow.obj",
+      "modelShift": [ -0.2, 0.3, 0.18 ],
+      "modelScale": 0.7
+    },
+    {
+      "type": "LipsBottomJoint3DModel",
+      "OBJ": "./assets/fx/grinchface/beard.obj",
+      "modelShift": [ 0, 0, 0 ],
+      "modelScale": 1.5
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "blend": "true",
+      "alphaTest": "true",
+      "depthTest": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 5 ],
+        [ "reflectionRatio", 0.25 ]
+      ]
+    }
+  ],
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/grinchface/grinchface.png",
+      "suits": [
+        {
+          "modelTextures": [
+            "./assets/fx/grinchface/tex/grinchface.png"
+          ],
+          "renderParamsIDs": [ 0 ]
+        },
+        {
+          "modelTextures": [
+            "./assets/fx/grinchface/tex/grinchface.png"
+          ],
+          "renderParamsIDs": [ 0 ]
+        },
+        {
+          "modelTextures": [
+            "./assets/fx/grinchface/tex/grinchface.png"
+          ],
+          "renderParamsIDs": [ 0 ]
+        },
+        {
+          "modelTextures": [
+            "./assets/fx/grinchface/tex/grinchface.png"
+          ],
+          "renderParamsIDs": [ 0 ]
+        }
+      ]
+    }
+  ]
+}

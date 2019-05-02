@@ -1,0 +1,857 @@
+{
+	"effectWidth": 1000,
+	
+	"emitters":
+	[
+	{
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/star-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 0, 1, 0, 1 ]
+		}
+	},
+	{
+		"name": "Magic Star",
+	
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/rect-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 1, 0, 0, 1 ]
+		}
+	},
+	{
+		"name": "Magic Star",
+	
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/circle-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 0, 0, 1, 1 ]
+		}
+	},
+	{
+		"name": "Magic Star",
+	
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/star-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 1, 1, 0, 1 ]
+		}
+	},
+	{
+		"name": "Magic Star",
+	
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/rect-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 0, 1, 1, 1 ]
+		}
+	},
+	{
+		"name": "Magic Star",
+	
+		"maxParticles": 10000,
+		"preloading": 1000,
+		
+		"texturePath": "./assets/particles/textures/circle-white.png",
+		"textureSize": [ 20, 20 ],
+		
+		"gravity": [ 0, -300, 0 ],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": 0
+			},
+			{
+				"t": 1.000,
+				"value": 10
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 360, 0]
+		},
+		
+		"lifeTime":
+		{
+			"value": 6
+		},
+		
+		"coords_system": "PARTICLE_BIRTH",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"offset_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0 ]
+			},
+			{
+				"t": 1.000,
+				"min": [ 150, 0, 0 ],
+				"max": [ 300, 0, 0 ]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timeline":
+			[
+			{
+				"t": 0.00,
+				"value": [ 40, 0, 0]
+			},
+			{
+				"t": 0.05,
+				"value": [ 38, 0, 12 ]
+			},
+			{
+				"t": 0.25,
+				"value": [ 0, 0, 40 ]
+			},
+			{
+				"t": 0.5,
+				"value": [ -40, 0, 0 ]
+			},
+			{
+				"t": 0.75,
+				"value": [ 0, 0, -40 ]
+			},
+			{
+				"t": 0.95,
+				"value": [ 38, 0, -12 ]
+			},
+			{
+				"t": 1.0,
+				"value": [ 40, 0, 0 ]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeOffset":
+			{
+				"min": 0,
+				"max": 1
+			},
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 45, 0 ]
+			},
+			{
+				"t": 1.000,
+				"value": [ 360, 45, 0 ]
+			}
+			]
+		},
+		
+		"scale":
+		{
+			"interpolation": "DISCRETE",
+			"timeline":
+			[
+			{
+				"min": 1,
+				"max": 2
+			}
+			]
+		},
+		
+		"color":
+		{
+			"value": [ 1, 0, 1, 1 ]
+		}
+	}
+	]
+}

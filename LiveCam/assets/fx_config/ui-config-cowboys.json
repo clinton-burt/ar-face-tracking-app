@@ -1,0 +1,34 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Cowboys Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 65,
+      "title": "Cowboys Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 64,
+      "title": "Cowboys 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 62,
+      "title": "Cowboys Helmet Filter",
+      "icon": "assets/icons/cowboys_helmet_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 63,
+      "title": "Cowboys Rowdy Filter",
+      "icon": "assets/icons/rowdy_icon.png",
+      "subMenu": ""
+    }
+  ]
+}

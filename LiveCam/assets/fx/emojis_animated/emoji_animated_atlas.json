@@ -1,0 +1,345 @@
+{
+
+  "iconPath": "./assets/fx/emojis_animated/icons/icon.png",
+  "models": [
+    {
+      "type": "AtlasAnimatedEmojiModel"
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoAtlasFragmentShader.txt",
+      "alphaTest": "true",
+      "depthTest": "true",
+      "blend": "true"
+    }
+  ],
+  
+  "modules": [
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/1.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_1.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 2.1, 2.1 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/2.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_2.png",
+          "animationOffset": [ 0.05, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/3.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_3.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3.3, 3.3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/4.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_4.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/5.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_5.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/6.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_6.png",
+          "animationOffset": [ 0, 0.27, 0 ],
+          "animationScale": [ 2.7, 2.7 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/7.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_7.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/8.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_8.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/9.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_9.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 2.9, 2.9 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/10.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_10.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/11.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_11.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/12.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_12.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/13.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_13_v2.png",
+          "animationOffset": [ -0.3, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/14.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_14.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/15.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_15.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/16.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_16.png",
+          "animationOffset": [ 0, 0.27, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/17.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_17_v2.png",
+          "animationOffset": [ 0, -0.2, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/18.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_18_v2.png",
+          "animationOffset": [ -0.2, 0.54, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/19.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_19.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/20.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_20.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/21.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_21.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/22.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_22.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/23.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_23.png",
+          "animationOffset": [ 0, 0.09, 0 ],
+          "animationScale": [ 3, 3 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/24.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_24.png",
+          "animationOffset": [ 0, 0.15, 0 ],
+          "animationScale": [ 3.9, 3.9 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/emojis_animated/icons/25.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "animationAtlasPath": "./assets/fx/emojis_animated/animations/expression_25.png",
+          "animationOffset": [ 0, 0.15, 0 ],
+          "animationScale": [ 3.8, 3.8 ],
+          "animationBackward": "false",
+          "animationSpeed": 0.9
+        }
+      ]
+    }
+  ]
+}

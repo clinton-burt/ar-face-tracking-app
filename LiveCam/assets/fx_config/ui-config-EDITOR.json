@@ -1,0 +1,19 @@
+{
+	"create" : "true",
+
+  "filters": [{
+    "id": 7,
+    "title": "FACEPAINT",
+    "icon": "assets/icons/face_paint_icon.png"
+  },
+  {
+    "id": 35,
+    "title": "EMOJIS_OPENGL_EFFECT",
+    "icon": "assets/images/emoti/Asset 3@20x.png"
+  },
+  {
+    "id": 15,
+    "title": "EMOJI_3D_EFFECT",
+    "icon": "assets/icons/sunglasses_icon.png"
+  }]
+}

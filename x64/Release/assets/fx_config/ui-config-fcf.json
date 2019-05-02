@@ -1,0 +1,29 @@
+{
+  "filters": [{
+    "id": 35,
+    "title": "Emoji Filter",
+    "icon": "assets/images/emoti/Asset 3@20x.png",
+    "subMenu": "page_cam_emoti"
+  }, {
+    "id": 4,
+    "title": "3D Dog Filter",
+    "icon": "assets/icons/BTN DOG CAM.png",
+    "subMenu": ""
+  }, {
+    "id": 32,
+    "title": "Football Player Emoji",
+    "icon": "assets/icons/footballPlayerEmojis.png"
+  }, {
+    "id": 33,
+    "title": "Football Player Face",
+    "icon": "assets/icons/footballPlayerEmojisFace.png"
+  }, {
+    "id": 29,
+    "title": "Hat & Scarf Filter",
+    "icon": "assets/icons/soccerHatScarfIcon.png"
+  }, {
+    "id": 28,
+    "title": "Football Head Filter",
+    "icon": "assets/icons/soccerBallHead.png"
+  }]
+}

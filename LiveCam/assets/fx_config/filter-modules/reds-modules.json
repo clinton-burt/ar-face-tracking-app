@@ -1,0 +1,107 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/redsPlayerEmojis/1.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/1.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/2.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/2.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/3.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/3.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/4.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/4.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/5.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/5.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/6.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/6.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/7.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/7.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/8.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/8.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/9.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/9.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/10.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/10.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/11.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/11.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/12.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/12.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/13.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/13.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/14.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/14.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/redsPlayerEmojis/15.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/redsPlayerEmojis/15.png",
+			"emojiScale": [ 1.5, 1.5 ]
+		}]
+	}]
+}

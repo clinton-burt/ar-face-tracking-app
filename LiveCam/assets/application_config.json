@@ -1,0 +1,19 @@
+ {
+	"input video width": 1920,
+	"input video height": 1080,
+	
+	"output video width": 1920,
+  "output video height": 1080,
+  
+	"editor": "false",
+	"ignore custom": "true",
+
+  "anti-aliasing": "SSAA_4X",
+  "you can choose anti-aliasing variants": [ "NONE", "SSAA_4X" ],
+
+  "team-branding-image-path": "",
+   
+	"bm_fps": 0,
+  
+	"filters": "./assets/fx/config.json"
+}

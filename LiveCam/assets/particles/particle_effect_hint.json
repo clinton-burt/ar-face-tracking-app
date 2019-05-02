@@ -1,0 +1,42 @@
+
+<EMITTER_DESCRIPTION>
+
+		bool enabled;
+
+		< Emitter Description >
+
+		uint maxParticles;
+		uint preloading;
+
+		std::string texturePath;
+		Vector2f textureSize;
+
+		bool hasInertion;
+		Vector3f gravity;
+
+		RelatedCoordinateSystem spawnRange_system; = { PARTICLE_EFFECT , PARTICLE_EMITTER }
+
+		RandomValueAtTimeline<UintWrapper, RandomUint> spawnTotal;
+		RandomValueAtTimeline<Vector4fWrapper, RandomVector4f> spawnRange; // yaw + pitch + delta yaw + delta pitch
+		< / Emitter Description >
+
+		< Particle Description >
+		RandomFloat lifeTime;
+
+		RelatedCoordinateSystem coords_system; = { PARTICLE_EFFECT , PARTICLE_EMITTER , PARTICLE_BIRTH , PARTICLE_ITSELF }
+		RelatedCoordinateSystem offset_axis_system;
+		RelatedCoordinateSystem coords_axis_system;
+		RelatedCoordinateSystem rotation_system;
+
+		RandomValueAtTimeline<Vector3fWrapper, RandomVector3f> coords;
+		RandomValueAtTimeline<Vector3fWrapper, RandomVector3f> offset;
+		RandomValueAtTimeline<Vector3fWrapper, RandomVector3f> rotation; // yaw + pitch + roll
+		RandomValueAtTimeline<FloatWrapper, RandomFloat> scale;
+		RandomValueAtTimeline<Vector4fWrapper, RandomVector4f> color;
+
+		std::vector<std::shared_ptr<EmitterDescription>> emittersTypes;
+		</ Particle Description >
+
+	std::vector<EmitterDescription> emittersTypes;
+
+</EMITTER_DESCRIPTION>

@@ -1,0 +1,46 @@
+{
+
+  "iconPath": "./assets/fx/dog/icons/bulldog_head.png",
+
+  "models": [
+    {
+      "type": "3DModel",
+      "name": "helmet",
+      "OBJ": "./assets/fx/dog/bulldog_head/BulldogHead.obj",
+      "modelScale": 1.6,
+      "modelShift": [ 0, 0, 0.1 ]
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 10 ]
+      ]
+    }
+  ],
+
+  "initialModules": [ 0, 0, 0, 0, 0 ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/dog/icons/bulldog_head.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/dog/bulldog_head/tex/BulldogHeadSurface_Color.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

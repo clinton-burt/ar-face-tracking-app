@@ -1,0 +1,312 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cowboys.png",
+		"suits": [{
+			"modelTextures": [		
+				"./assets/fx/nfl_teams/textures/cowboys/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/cowboys/Helmet_V5_FaceMask_UVMap.jpg",		
+				"./assets/fx/nfl_teams/textures/cowboys/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/colts.png",
+		"suits": [{ 
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/colts/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/colts/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/colts/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/49ers.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/49ers/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/49ers/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/49ers/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bucs.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/bucs/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/bucs/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/bucs/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/falcons.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/falcons/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/falcons/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/falcons/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jets.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/jets/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/jets/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/jets/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/raiders.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/raiders/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/raiders/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/raiders/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/steelers.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/steelers/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/steelers/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/steelers/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/redskins.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/redskins/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/redskins/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/redskins/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bengals.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/bengals/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/bengals/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/bengals/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/denver.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/denver/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/denver/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/denver/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cardinals.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/cardinals/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/cardinals/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/cardinals/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/greenbay.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/greenbay/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/greenbay/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/greenbay/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/kc.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/kc/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/kc/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/kc/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/rams.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/rams/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/rams/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/rams/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/texans.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/texans/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/texans/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/texans/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/detroit.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/detroit/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/detroit/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/detroit/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ny.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/ny/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/ny/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/ny/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bills.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/bills/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/bills/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/bills/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chargers.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/chargers/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/chargers/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/chargers/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/hawks.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/hawks/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/hawks/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/hawks/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/panthers.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/panthers/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/panthers/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/panthers/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ravens.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/ravens/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/ravens/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/ravens/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/titans.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/titans/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/titans/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/titans/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/pats.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/pats/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/pats/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/pats/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/eagles.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/eagles/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/eagles/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/eagles/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jags.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/jags/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/jags/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/jags/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/saints.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/saints/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/saints/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/saints/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chicago.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/chicago/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/chicago/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/chicago/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/vikings.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/vikings/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/vikings/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/vikings/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/dolphins.png",
+		"suits": [{
+			"modelTextures": [
+				"./assets/fx/nfl_teams/textures/dolphins/Helmet_V5_HelmetStripe_UVMap.jpg",
+				"./assets/fx/nfl_teams/textures/dolphins/Helmet_V5_FaceMask_UVMap.jpg",				
+				"./assets/fx/nfl_teams/textures/dolphins/Helmet_V5_Helmet_UVMap.jpg"
+			] 
+		}]
+	}]
+}

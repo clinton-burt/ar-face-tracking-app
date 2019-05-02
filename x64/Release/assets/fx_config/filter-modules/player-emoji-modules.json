@@ -1,0 +1,44 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/playerEmojis/1.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/1.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/playerEmojis/2.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/2.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/playerEmojis/3.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/3.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/playerEmojis/4.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/4.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/playerEmojis/5.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/5.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/playerEmojis/6.png",
+		"suits": [{
+			"emojiTexture": "./assets/fx/playerEmojis/6.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	}]
+}

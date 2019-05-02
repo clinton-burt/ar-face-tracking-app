@@ -1,0 +1,38 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/heartEyes/button_icons/lips_icon.png",
+		"suits": [{
+			"visible": false
+		},
+		{
+			"visible": false
+		},
+		{
+			"visible": true
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/heartEyes/button_icons/heart_icon.png",
+		"suits": [{
+			"visible": true
+		},
+		{
+			"visible": true
+		},
+		{
+			"visible": false
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/heartEyes/button_icons/heart_lips_icon.png",
+		"suits": [{
+			"visible": true
+		},
+		{
+			"visible": true
+		},
+		{
+			"visible": true
+		}]
+	}]
+}

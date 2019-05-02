@@ -1,0 +1,184 @@
+{
+	"modules": [{
+		"iconPath": "./assets/images/emoti/Asset 3@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 3@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 12@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 12@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 13@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 13@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 14@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 14@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 19@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 19@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 20@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 20@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 17@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 17@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 18@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 18@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 15@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 15@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 16@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 16@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 21@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 21@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 4@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 4@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 22@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 22@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 23@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 23@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 24@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 24@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 25@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 25@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 26@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 26@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 27@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 27@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 28@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 28@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 5@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 5@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 6@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 6@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 7@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 7@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 8@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 8@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 9@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 9@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 10@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 10@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/images/emoti/Asset 11@20x.png",
+		"suits": [{
+			"emojiTexture": "./assets/images/emoti/Asset 11@20x.png",
+			"emojiScale": [ 2, 2 ]
+		}]
+	}]
+}

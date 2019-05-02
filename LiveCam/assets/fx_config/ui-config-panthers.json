@@ -1,0 +1,40 @@
+{
+  "filters": [
+    {
+      "id": 31,
+      "title": "Panthers Sir Purr Filter",
+      "icon": "assets/icons/panthersSirPurr.png"
+    },
+    {
+      "id": 45,
+      "title": "Panthers Beanie Filter",
+      "icon": "assets/icons/panthersHatIcon.png"
+    },
+    {
+      "id": 42,
+      "title": "Panthers Wig Filter",
+      "icon": "assets/icons/panthersWigGlasses.png"
+    },
+    {
+      "id": 36,
+      "title": "Panthers Face Paint Filter",
+      "icon": "assets/icons/panthersFacePaint.png"
+    },
+    {
+      "id": 30,
+      "title": "Panthers Helmet Filter",
+      "icon": "assets/icons/panthersHelmet.png"
+    },
+    {
+      "title": "Panthers Emoji Filter",
+      "icon": "./assets/images/emoti/Asset 3@20x.png",
+      "JSONsource": "./assets/fx_config/models/emojis.json"
+    },
+    {
+      "id": 4,
+      "title": "Panthers 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    }
+  ]
+}

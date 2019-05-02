@@ -1,0 +1,76 @@
+#version 400
+
+in vec3 Position;
+in vec3 Normal;
+in vec2 TexCoord;
+
+uniform sampler2D Texture;
+uniform sampler2D NormalMap;
+
+uniform vec4 lightPos;
+uniform vec4 cameraPos;
+uniform vec3 ambientLight;
+uniform vec3 diffuseLight;
+uniform vec3 specularLight;
+uniform float specularPower;
+
+uniform mat4 ModelViewMatrix;
+
+void phongModel( vec3 norm, out vec3 ambAndDiff, out vec3 spec) 
+{
+    vec3 lightDirection = lightPos.w == 0 ? normalize(vec3(lightPos)) : normalize(vec3(lightPos) - Position);
+	vec3 cameraDirection =  cameraPos.w == 0 ? normalize(vec3(cameraPos)) : normalize(vec3(cameraPos) - Position);
+    vec3 lightReflection = reflect( -lightDirection, norm );
+
+    float sDotN = max( dot(lightDirection,norm), 0.0 );
+	
+    vec3 diffuse = diffuseLight * sDotN;
+    ambAndDiff = ambientLight + diffuse;
+	
+    spec = vec3(0.0);
+    if(sDotN > 0.0)
+    {
+        spec = specularLight * pow(max( dot(lightReflection, cameraDirection), 0.0 ), specularPower);
+		// spec is NAN, if dot == 0 && specularPower <= 0
+    }
+}
+
+mat3 rotationMatrix(vec3 axis, float sine)
+{
+    axis = normalize(axis);
+    float s = sine;
+    float c = sqrt(1 - sine * sine);
+    float oc = 1.0 - c;
+    
+    return mat3(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,
+                oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,
+                oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c);
+}
+
+vec3 CalcNormal(vec3 NormalInitial, vec3 NormalFromMap)
+{
+	float sine = sin(acos(dot(NormalInitial, NormalFromMap) / length(NormalInitial) / length(NormalFromMap)));
+	
+	vec3 axis = cross(NormalInitial, vec3(0, 0, 1));
+	
+	return rotationMatrix(axis, sine) * NormalFromMap;
+}
+
+void main()
+{
+    vec3 ambAndDiff, spec;
+	
+	vec3 norm = texture2D(NormalMap, TexCoord ).rgb * 2 - vec3(1, 1, 1);
+	norm = normalize(CalcNormal(Normal, vec3(ModelViewMatrix * vec4(norm, 0))));
+	//norm = vec3(ModelViewMatrix * vec4(norm, 0));
+	
+	phongModel(norm, ambAndDiff, spec);
+
+    vec4 textureColor = texture2D(Texture, TexCoord).rgba;
+	
+	textureColor.r = textureColor.r * ambAndDiff.r + spec.r;
+	textureColor.g = textureColor.g * ambAndDiff.g + spec.g;
+	textureColor.b = textureColor.b * ambAndDiff.b + spec.b;
+	
+	gl_FragColor = textureColor;
+}

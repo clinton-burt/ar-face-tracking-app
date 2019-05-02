@@ -1,0 +1,7 @@
+newmtl no_material
+
+Ka 0.5 0 0.5
+Kd 0.5 0 0.5
+Ks 1 1 1
+Ns 40
+map_Kd noTexture.png

@@ -1,0 +1,87 @@
+{
+  "iconPath": "assets/icons/BTN DOG CAM.png",
+  "models": [
+    {
+      "type": "3DModel",
+      "name": "ears",
+      "OBJ": "./assets/fx/dog/models/ears2.obj",
+      "modelShift": [ 0, 0.6, 0.45 ],
+      "modelScale": 1.4
+    },
+    {
+      "type": "3DModel",
+      "name": "nose",
+      "OBJ": "./assets/fx/dog/models/nose2.obj",
+      "modelShift": [ 0, -0.15, 0.45 ],
+      "modelScale": 0.6
+    },
+    {
+      "type": "AtlasAnimatedToungeEmojiModel"
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 0.15, 0.15, 0.15 ],
+        [ "specularPower", 10 ]
+      ]
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.2, 0.4, 1, 0 ],
+        [ "ambientLight", 0.6, 0.6, 0.6 ],
+        [ "diffuseLight", 0.6, 0.6, 0.6 ],
+        [ "specularLight", 1, 1, 1 ],
+        [ "specularPower", 21 ]
+      ]
+    },
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoAtlasFragmentShader.txt",
+      "alphaTest": "true",
+      "depthTest": "true",
+      "blend": "true"
+    }
+  ],
+
+  "modules": [
+    {
+      "iconPath": "assets/icons/BTN DOG CAM.png",
+      "suits": [
+        {
+          "renderParamsIDs": [ 0 ],
+          "modelTextures": [
+            "./assets/fx/dog/textures/DogEar_UVMapTextureV2.jpg"
+          ]
+        },
+        {
+          "renderParamsIDs": [ 1, 0 ],
+          "modelTextures": [
+            "./assets/fx/dog/textures/DogNoseB_UVMapTextureV2_small.jpg",
+            "./assets/fx/dog/textures/Cube.1Surface_ColorV2_small.png"
+          ]
+        },
+        {
+          "renderParamsID": 2,
+          "animationAtlasPath": "./assets/fx/dog/animations/tongue.png",
+          "animationOffset": [ 0, -0.8, 0.1 ],
+          "animationScale": [ 0.8, 0.8 ],
+          "animationSpeed": 0.8,
+          "animationOpened": 46
+        }
+      ]
+    }
+  ]
+}

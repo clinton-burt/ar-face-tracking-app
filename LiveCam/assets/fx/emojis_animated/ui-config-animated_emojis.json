@@ -1,0 +1,8 @@
+{
+  "filters": [
+    {
+      "title": "Animated Emojis",
+      "JSONsource": "./assets/fx/emojis_animated/emoji_animated_atlas.json"
+    }
+  ]
+}

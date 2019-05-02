@@ -1,0 +1,53 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+
+      "id": 12,
+      "title": "Helmet Filter",
+      "icon": "assets/icons/football_helmet_icon.png",
+      "subMenu": "page_cam_team_football_helmets"
+    },
+    {
+      "id": 13,
+      "title": "Dragon Filter",
+      "icon": "assets/icons/dragon_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 4,
+      "title": "3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 21,
+      "title": "Marlins Hat Filter",
+      "icon": "assets/icons/Marlins_hat_v002.png",
+      "subMenu": ""
+    },
+    {
+      "id": 16,
+      "title": "Hockey Helmet Filter",
+      "icon": "assets/icons/hockey_helmet_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 15,
+      "title": "3D Emoji Filter",
+      "icon": "assets/icons/sunglasses_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 50,
+      "title": "NYC Football Pigeon Mask",
+      "icon": "assets/icons/pigeonMaskIcon.png",
+      "subMenu": ""
+    }
+  ]
+}

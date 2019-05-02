@@ -1,0 +1,17 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/ny.png",
+      "suits": [
+        {
+          "modelPath": "./assets/fx/helmet/helmet_7.obj",
+          "modelTextures": [
+            "./assets/fx/nfl_teams/textures/ny/Helmet_V5_HelmetStripe_UVMap.jpg",
+            "./assets/fx/nfl_teams/textures/ny/Helmet_V5_FaceMask_UVMap.jpg",
+            "./assets/fx/nfl_teams/textures/ny/Helmet_V5_Helmet_UVMap.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

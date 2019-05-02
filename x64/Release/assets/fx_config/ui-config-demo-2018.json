@@ -1,0 +1,77 @@
+{
+  "filters": [
+    {
+      "title": "Emoji Filter",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/demos/demo_emojis.json"
+    },
+    {
+      "title": "Animated Emojis",
+      "JSONsource": "./assets/fx/demos/demo_animated_emojis.json"
+    },
+    {
+      "id": 4,
+      "title": "3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "JSONsource": "./assets/fx/demos/demo_3d_filters.json",
+      "title": "3d Model Filters",
+      "icon": "assets/icons/billyMarlin.png"
+    },
+    {
+      "title": "Facepaint Filters",
+      "JSONsource": "./assets/fx/demos/demo_facepaint.json"
+    },
+    {
+      "title": "Holiday Filters",
+      "JSONsource": "./assets/fx/demos/demo_holidays.json"
+    },
+    {
+      "title": "Helmet Filters",
+      "JSONsource": "./assets/fx/demos/demo_helmets.json"
+    },
+    {
+      "title": "Hair Filters",
+      "JSONsource": "./assets/fx/demos/demo_hair.json"
+    },
+    {
+      "title": "Hockey Mixed Filters",
+      "JSONsource": "./assets/fx/hockey_bucket/hockey_bucket_all_filters.json",
+      "icon": "./assets/fx/hockey_bucket/icons/bucket.png"
+    },
+    {
+      "title": "Beard and Moustache Filters",
+      "JSONsource": "./assets/fx/demos/demo_beards_mustaches.json"
+    },
+    {
+      "title": "Glasses Filters",
+      "JSONsource": "./assets/fx/demos/demo_glasses.json"
+    },
+    {
+      "title": "Space Cam Filters",
+      "JSONsource": "./assets/fx/yankees/yankees_space_cam.json"
+    },
+    {
+      "title": "Caps Filter",
+      "JSONsource": "./assets/fx/demos/demo_cap.json"
+    },
+    {
+      "title": "Jersey Filter",
+      "JSONsource": "./assets/fx/demos/demo_jersey.json"
+    },
+    {
+      "id": 89,
+      "title": "Big Eye & Mouth Filter",
+      "icon": "assets/icons/BTN DISTORT.png",
+      "subMenu": ""
+    },
+    {
+      "id": 61,
+      "title": "Tesla Helmet Filter",
+      "icon": "assets/icons/teslaHelmet.png",
+      "subMenu": ""
+    }
+  ]
+}

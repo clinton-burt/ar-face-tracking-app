@@ -1,0 +1,29 @@
+{
+    "filters": [
+	{
+        "id": 35,
+        "title": "Phillies Emoji Filter",
+        "icon": "assets/images/emoti/Asset 3@20x.png",
+        "subMenu": "page_cam_emoti"
+    },{
+        "id": 4,
+        "title": "Phillies 3D Dog Filter",
+        "icon": "assets/icons/BTN DOG CAM.png",
+        "subMenu": ""
+	},{
+        "id": 23,
+        "title": "Phillies Hat Filter",
+        "icon": "assets/icons/phillies_icon.png",
+        "subMenu": ""
+  },{
+        "id": 51,
+        "title": "Phillies Phanatic Filter",
+        "icon": "assets/icons/phillie-phanatic-clipart-1.png",
+        "subMenu": ""
+  },{
+        "id": 52,
+        "title": "Phillies Smile Filter",
+        "icon": "assets/icons/smile_icon.png",
+        "subMenu": "page_cam_emoti"
+    }]
+}

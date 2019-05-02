@@ -1,0 +1,39 @@
+{
+  "filters": [
+    {
+      "title": "Hat & Scarf Filter",
+      "icon": "assets/icons/soccerHatScarfIcon.png",
+      "JSONsource": "./assets/fx/nyc_football_club/nyc_football_club_scarf.json"
+    },
+    {
+      "id": 28,
+      "title": "Soccer Ball Head Filter",
+      "icon": "assets/icons/soccerBallHead.png"
+    },
+    {
+      "id": 32,
+      "title": "Soccer Player Emojis",
+      "icon": "assets/icons/footballPlayerEmojis.png"
+    },
+    {
+      "id": 33,
+      "title": "Soccer Player Emojis Face",
+      "icon": "assets/icons/footballPlayerEmojisFace.png"
+    },
+    {
+      "title": "Animated Emojis",
+      "JSONsource": "./assets/fx/emojis_animated/emoji_animated_atlas.json"
+    },
+    {
+      "title": "Emojis",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/emoji/emojis.json"
+    },
+    {
+      "id": 4,
+      "title": "3D Dog",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+newmtl marble_green
+
+Ka 0.5 0.5 0.5
+Kd 0.5 0.5 0.5
+Ks 0.25 0.25 0.25
+Ns 3
+map_Kd marble_green.png

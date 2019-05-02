@@ -1,0 +1,18 @@
+{
+	"filters": [{
+		"title": "Emoji Filter",
+		"icon": "./assets/fx/emoji/Asset 3@20x.png",
+		"JSONsource": "./assets/fx/emoji/emojis.json"
+	},
+	{
+		"id": 4,
+		"title": "3D Dog Filter",
+		"icon": "assets/icons/BTN DOG CAM.png",
+		"subMenu": ""
+	},
+	{
+		"title": "Geico gecko",
+		"icon": "./assets/fx/geico_gecko/gecko_icon.png",
+		"JSONsource": "./assets/fx/geico_gecko/gecko.json"
+	}]
+}

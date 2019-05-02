@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="fx\delaunay.cpp" />
+    <ClCompile Include="fx\FxCore.cpp" />
+    <ClCompile Include="fx\ImgMesh.cpp" />
+    <ClCompile Include="fx\math3d.cpp" />
+    <ClCompile Include="fx\MeshMaker.cpp" />
+    <ClCompile Include="fx\SpatialGraph.cpp" />
+    <ClCompile Include="fx\zPinch.cpp" />
+    <ClCompile Include="glsl.cpp" />
+    <ClCompile Include="helpers\CameraHelper.cpp" />
+    <ClCompile Include="models\DrawObjectsModel.cpp" />
+    <ClCompile Include="models\FilterUiModel.cpp" />
+    <ClCompile Include="models\TeamColorsModel.cpp" />
+    <ClCompile Include="utils\textfile.cpp" />
+    <ClCompile Include="utils\trackball.cc" />
+    <ClCompile Include="helpers\TrackerHelper.cpp" />
+    <ClCompile Include="ui\LiveCamWindow.cpp" />
+    <ClCompile Include="workers\CameraWorker.cpp" />
+    <ClCompile Include="ui\CVImageWidget.cpp" />
+    <ClCompile Include="ui\CVImageWidgetOrg.cpp" />
+    <ClCompile Include="models\CameraModel.cpp" />
+    <ClCompile Include="ui\OutputWindow.cpp" />
+    <ClCompile Include="utils\stdafx.cpp" />
+    <ClCompile Include="models\OpenGLModel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="utils\sceneSwitchDetector.cpp" />
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="models\FXModel.cpp" />
+    <ClCompile Include="fx\DepthMask.cpp" />
+    <ClCompile Include="fx\FxEmojiAncestor.cpp" />
+    <ClCompile Include="fx\DepthMask.cpp" />
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="fx\FxAnimatedEmojiAncestor.cpp" />
+    <ClCompile Include="fx\FxTemplate.cpp" />
+    <ClCompile Include="fx\FxDebugFalsePositive.cpp" />
+    <ClCompile Include="fx\Fx3dModelAncestor.cpp" />
+    <ClCompile Include="utils\JSONVectorReader.cpp" />
+    <ClCompile Include="models\Uniforms.cpp" />
+    <ClCompile Include="utils\ModelLoader.cpp" />
+    <ClCompile Include="ui\EditorWindow.cpp" />
+    <ClCompile Include="models\SpriteAnimated.cpp" />
+    <ClCompile Include="fx\FilterManager.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CameraWorker.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CVImageWidget.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_CVImageWidgetOrg.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_EditorWindow.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_ImageSequenceUtil.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_LiveCamWindow.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_OutputWindow.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_res.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_res2.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonClasses.cpp" />
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_EmojiModelTab.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="tracker\FaceTracker.cpp" />
+    <ClCompile Include="ui\modelTabs\EmojiModelTab.cpp">
+      <Filter>UI\Model Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\modelTabs\Model3DTab.cpp">
+      <Filter>UI\Model Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\modelTabs\RenderParamsTab.cpp">
+      <Filter>UI\Model Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_Model3DTab.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\$(Configuration)\moc_RenderParamsTab.cpp">
+      <Filter>UI\QT files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Resolutions.cpp" />
+    <ClCompile Include="fx\FxDebugFalsePositive.cpp" />
+    <ClCompile Include="utils\JSONVectorReader.cpp" />
+    <ClCompile Include="models\Uniforms.cpp" />
+    <ClCompile Include="fx\FxFaceSwapModel.cpp" />
+    <ClCompile Include="fx\Fx3dModelAncestor.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBigEyes.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFaceDistortionAncestor.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePinch.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintAncestor.cpp" />
+    <ClCompile Include="fx\FxFacePaintAncestor2.cpp" />
+    <ClCompile Include="fx\FxRavensFacePaintAncestor.cpp" />
+    <ClCompile Include="fx\FxFacePaintAncestor.cpp" />
+    <ClCompile Include="fx\FxFaceSwapSjSharksAncestor.cpp" />
+    <ClCompile Include="utils\CVImageUtil.cpp" />
+    <ClCompile Include="fx\FxAnimatedStandardEmojiAncestor.cpp" />
+    <ClCompile Include="fx\FxFaceSwap2.cpp" />
+    <ClCompile Include="fx\AlphaMask.cpp" />
+    <ClCompile Include="fx\FxFireHead.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="particles\Particles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="particles\ParticleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="particles\ParticleDataTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxGhost.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFootballPlayerEmojis.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFootballPlayerEmojisFace.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFootballTeamHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxGeneralModel.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxGiantPlayers.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxGumboMascotTongue.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxHipsterBeard.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxHockeyHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxJetsMohawk.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxKnightsHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxLightningBee.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxLightningHair.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxLogo.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMarlinsHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMiamiHeatArenaEntertainersFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMiamiHeatCelebritiesFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMiamiHeatPastPlayersFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMiamiHeatPlayersFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMiamiHeatSuperHeroesFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxMrRedLegs.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPanthersBeanieOpenGL.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPanthersHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPanthersPaintOpenGL.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPanthersWig.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPhilliesHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPhilliesPhanatic.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPhilliesSmile.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPigeonMask.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxPlayerEmojis.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRamHorns.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRamsHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRedsCheekLogo.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRedsPlayerEmojis.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRidersGopher.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRidersHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRidersPirate.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRidersWatermelon.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxScarfHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxSirPurr.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxSjSharksFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxSoccerBall.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxTeslaHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxTeslaHelmetLightning.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxTeslaHelmetOKC.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxThanksgivingEmojis.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxYankeesBobbleBoy.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxYankeesHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxYankeesJudge.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\Fx3dHeart.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBaseballHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBigBoyHair3d_2.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBillsFacePaint.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBobbleHead.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxChargersFP.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxChicagoBullsFaceSwap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxConferenceLogo.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCowboysAll.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCowboysDog3d.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCowboysFacePaint.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCowboysHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCowboysRowdy.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxDog3d.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxDragon.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesBaseballHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesBlackEye.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesCrazyHair.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesMilitaryHat.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesMiniBirds.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesSwoopBeak.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEaglesSwoopHead.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEmojiFace3d.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEmojisCap.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxEmojisOpenGL.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaint.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintBucs.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintNewTest.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintRavens.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintRavensNew.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintSimple.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFacePaintYankees.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFalconsCamoFacePaint.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxFootballHelmet.cpp">
+      <Filter>Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxRedsFaceSwap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCelticsBobbleHead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxBravesTomahawkChop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxYankeesBobbleHead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGlMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxDalmation3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxVikingsFaceSwap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\FxCrowsFootball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fx\delaunay.h" />
+    <ClInclude Include="fx\FilterManager.h" />
+    <ClInclude Include="fx\FxCore.h" />
+    <ClInclude Include="fx\ImgMesh.h" />
+    <ClInclude Include="fx\math3d.h" />
+    <ClInclude Include="fx\MeshMaker.h" />
+    <ClInclude Include="fx\SpatialGraph.h" />
+    <ClInclude Include="fx\zPinch.h" />
+    <ClInclude Include="glsl.h" />
+    <ClInclude Include="helpers\CameraHelper.h" />
+    <ClInclude Include="models\CameraModel.h" />
+    <ClInclude Include="models\DrawObjectsModel.h" />
+    <ClInclude Include="models\FilterUiModel.h" />
+    <ClInclude Include="models\OpenGLModel.h" />
+    <ClInclude Include="models\TeamColorsModel.h" />
+    <ClInclude Include="tinyobjloader\tiny_obj_loader.h" />
+    <ClInclude Include="utils\ModelUtil.h" />
+    <ClInclude Include="utils\stb_image.h" />
+    <ClInclude Include="utils\textfile.h" />
+    <ClInclude Include="utils\trackball.h" />
+    <ClInclude Include="tracker\FaceTracker.h" />
+    <ClInclude Include="helpers\TrackerHelper.h" />
+    <ClInclude Include="utils\CVImageUtil.h" />
+    <ClInclude Include="utils\DrawUtil.h" />
+    <ClInclude Include="utils\ModelLoader.h" />
+    <ClInclude Include="utils\PointCalcUtil.h" />
+    <ClInclude Include="interfaces\UiInterface.h" />
+    <ClInclude Include="utils\sceneSwitchDetector.h" />
+    <ClInclude Include="FrameManager.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="fx\DepthMask.h" />
+    <ClInclude Include="fx\FxAnimatedEmojiAncestor.h" />
+    <ClInclude Include="fx\FxEmojiAncestor.h" />
+    <ClInclude Include="models\FXModel.h" />
+    <ClInclude Include="fx\FxDebugFalsePositive.h" />
+    <ClInclude Include="fx\FxTemplate.h" />
+    <ClInclude Include="fx\Fx3dModelAncestor.h" />
+    <ClInclude Include="utils\JSONVectorReader.h" />
+    <ClInclude Include="models\Uniforms.h" />
+    <ClInclude Include="models\SpriteAnimated.h" />
+    <ClInclude Include="GeneratedFiles\ui_EditorWindow.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LiveCamWindow.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_OutputWindow.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EmojiModelTab.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonClasses.h" />
+    <ClInclude Include="GeneratedFiles\ui_EditorWindow.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Model3DTab.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RenderParamsTab.h">
+      <Filter>UI\QT files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Resolutions.h" />
+    <ClInclude Include="utils\JSONVectorReader.h" />
+    <ClInclude Include="models\Uniforms.h" />
+    <ClInclude Include="fx\FxFaceSwapModel.h" />
+    <ClInclude Include="fx\Fx3dModelAncestor.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBigEyes.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFaceDistortionAncestor.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePinch.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintAncestor.h" />
+    <ClInclude Include="fx\FxFacePaintAncestor2.h" />
+    <ClInclude Include="fx\FxRavensFacePaintAncestor.h" />
+    <ClInclude Include="fx\FxFaceSwapSjSharksAncestor.h" />
+    <ClInclude Include="VersionsEnums.h" />
+    <ClInclude Include="fx\FxAnimatedStandardEmojiAncestor.h" />
+    <ClInclude Include="fx\AlphaMask.h" />
+    <ClInclude Include="fx\FxFireHead.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="particles\Particles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="particles\ParticleManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="particles\ParticleDataTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxGhost.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFootballPlayerEmojis.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFootballPlayerEmojisFace.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFootballTeamHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxGeneralModel.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxGiantPlayers.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxGumboMascotTongue.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxHipsterBeard.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxHockeyHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxJetsMohawk.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxKnightsHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxLightningBee.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxLightningHair.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxLogo.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMarlinsHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMiamiHeatArenaEntertainersFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMiamiHeatCelebritiesFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMiamiHeatPastPlayersFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMiamiHeatPlayersFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMiamiHeatSuperHeroesFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxMrRedLegs.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPanthersBeanieOpenGL.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPanthersHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPanthersPaintOpenGL.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPanthersWig.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPhilliesHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPhilliesPhanatic.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPhilliesSmile.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPigeonMask.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxPlayerEmojis.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRamHorns.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRamsHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRedsCheekLogo.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRedsPlayerEmojis.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRidersGopher.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRidersHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRidersPirate.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRidersWatermelon.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxScarfHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxSirPurr.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxSjSharksFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxSoccerBall.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxTeslaHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxTeslaHelmetLightning.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxTeslaHelmetOKC.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxThanksgivingEmojis.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxYankeesBobbleBoy.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxYankeesHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxYankeesJudge.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\Fx3dHeart.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBaseballHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBigBoyHair3d_2.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBillsFacePaint.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBobbleHead.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxChargersFP.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxChicagoBullsFaceSwap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxConferenceLogo.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCowboysAll.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCowboysDog3d.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCowboysFacePaint.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCowboysHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCowboysRowdy.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxDog3d.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxDragon.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesBaseballHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesBlackEye.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesCrazyHair.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesMilitaryHat.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesMiniBirds.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesSwoopBeak.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEaglesSwoopHead.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEmojiFace3d.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEmojisCap.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxEmojisOpenGL.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaint.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintBucs.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintNewTest.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintRavens.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintRavensNew.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintSimple.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFacePaintYankees.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFaceSwap2.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFalconsCamoFacePaint.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxFootballHelmet.h">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxRedsFaceSwap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCelticsBobbleHead.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxBravesTomahawkChop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxYankeesBobbleHead.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGlMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxDalmation3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxVikingsFaceSwap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\FxCrowsFootball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ReadMe.txt" />
+    <CustomBuild Include="utils\stdafx.h" />
+    <CustomBuild Include="utils\targetver.h" />
+    <CustomBuild Include="ui\LiveCamWindow.h" />
+    <CustomBuild Include="utils\ImageSequenceUtil.h" />
+    <CustomBuild Include="workers\CameraWorker.h" />
+    <CustomBuild Include="ui\CVImageWidgetOrg.h" />
+    <CustomBuild Include="ui\OutputWindow.h" />
+    <CustomBuild Include="ui\CVImageWidget.h" />
+    <CustomBuild Include="ui\EditorWindow.h" />
+    <CustomBuild Include="ui\OutputWindow.ui">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\LiveCamWindow.ui">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\res.qrc">
+      <Filter>UI\QT files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\EditorWindow.ui">
+      <Filter>UI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\res2.qrc">
+      <Filter>UI\QT files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\EmojiModelTab.ui">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\EmojiModelTab.h">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\Model3DTab.h">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\Model3DTab.ui">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\RenderParamsTab.h">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\modelTabs\RenderParamsTab.ui">
+      <Filter>UI\Model Tabs</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ui_config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Filters">
+      <UniqueIdentifier>{e26f6e32-0f13-418e-af24-290beb9dcd30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{aeac85b7-a6c2-4fb9-952e-665d5ef17b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\QT files">
+      <UniqueIdentifier>{d634d6fd-5318-4f89-96b0-69c6ff5c4f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Model Tabs">
+      <UniqueIdentifier>{87d39645-07e9-484c-9b77-c79f8a85ac23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="work">
+      <UniqueIdentifier>{605b0b01-14ef-40e3-848b-183db77670cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

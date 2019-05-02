@@ -1,0 +1,14 @@
+{
+    "filters": [
+	{
+        "id": 35,
+        "title": "TCU Emoji Filter",
+        "icon": "assets/images/emoti/Asset 3@20x.png",
+        "subMenu": "page_cam_emoti"
+    },{
+        "id": 7,
+        "title": "TCU Face Paint Filter",
+        "icon": "assets/icons/face_paint_icon_tcu.png",
+        "subMenu": ""
+    }]
+}

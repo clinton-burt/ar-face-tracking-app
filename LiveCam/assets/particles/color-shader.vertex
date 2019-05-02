@@ -1,0 +1,8 @@
+layout (location = 0) in vec3 VertexPosition;
+
+uniform mat4 ProjectionMatrix;
+
+void main() 
+{
+	gl_Position = ProjectionMatrix * vec4(VertexPosition.xyz, 1.0);
+}

@@ -1,0 +1,116 @@
+{
+	"emitters":
+	[
+	{
+		"maxParticles": 300,
+		"preloading": 100,
+		
+		"texturePath": "textures/spark.png",
+		"textureSize": [ 10, 10 ],
+		
+		"hasInertion": "false",
+		"gravity": [0, 0, 0],
+		
+		"spawnRange_system": "PARTICLE_EFFECT",
+		
+		"spawnTotal":
+		{
+			"interpolation": "LINEAR_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0,
+				"value": 0
+			},
+			{
+				"t": 1,
+				"value": 5
+			}
+			]
+		},
+		
+		"spawnRange":
+		{
+			"value": [ 0, 0, 0, 360 ]
+		},
+		
+		"lifeTime":
+		{
+			"value": 3
+		},
+		
+		"coords_system": "PARTICLE_EFFECT",
+		"offset_axis_system": "PARTICLE_EFFECT",
+		"coords_axis_system": "PARTICLE_BIRTH",
+		"rotation_system": "PARTICLE_EFFECT",
+		
+		"coords":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 0, 0, 0]
+			},
+			{
+				"t": 3.000,
+				"value": [ 500, 0, 0]
+			}
+			]
+		},
+		
+		"offset":
+		{
+			"interpolation": "CUBIC_SPLINE",
+			"timelineType": "LOOPED",
+			"timeline":
+			[
+			{
+				"t": 0.000,
+				"value": [ 10, 0, 0]
+			},
+			{
+				"t": 0.025,
+				"value": [ 9.5, 3, 0]
+			},
+			{
+				"t": 0.125,
+				"value": [ 0, 10, 0]
+			},
+			{
+				"t": 0.25,
+				"value": [ -10, 0, 0]
+			},
+			{
+				"t": 0.375,
+				"value": [ 0, -10, 0]
+			},
+			{
+				"t": 0.475,
+				"value": [ 9.5, -3, 0]
+			},
+			{
+				"t": 0.5,
+				"value": [ 10, 0, 0]
+			}
+			]
+		},
+		
+		"rotation":
+		{
+			"value": [ 0, 0, 0 ]
+		},
+		
+		"scale":
+		{
+			"value": 1
+		},
+		
+		"color":
+		{
+			"value": [ 1, 1, 0, 1 ]
+		}
+	}
+	]
+}

@@ -1,0 +1,57 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Falcons Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 4,
+      "title": "Falcons 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 48,
+      "title": "Falcons Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "title": "Falcons Helmet Filter",
+      "icon": "assets/icons/falcons_helmet.png",
+      "JSONsource": "./assets/fx/falcons/falcons-helmet.json"
+    },
+    {
+      "title": "Falcons Freddy Face Filter",
+      "icon": "assets/icons/freddy_falcon.png",
+      "JSONsource": "./assets/fx/falcons/falcons-freddy.json"
+    },
+    {
+      "title": "Falcons Party Hat Filter",
+      "icon": "assets/icons/party_hat-1.png",
+      "JSONsource": "./assets/fx/falcons/falcons-party-hat.json"
+    },
+    {
+      "title": "Falcons Party Hat 2 Filter",
+      "icon": "assets/icons/party_hat-2.png",
+      "JSONsource": "./assets/fx/falcons/falcons-party-hat-2.json"
+    },
+    {
+      "title": "Falcons Santa Hat Filter",
+      "icon": "assets/icons/santa.png",
+      "JSONsource": "./assets/fx/falcons/falcons-santa-hat.json"
+    },
+    {
+      "title": "Falcons Santa Hat Thin Filter",
+      "icon": "assets/icons/santa_thin.png",
+      "JSONsource": "./assets/fx/falcons/falcons-santa-hat-thin.json"
+    },
+    {
+      "title": "Falcons Elf Hat Filter",
+      "icon": "assets/icons/elf.png",
+      "JSONsource": "./assets/fx/falcons/falcons-elf-hat.json"
+    }
+  ]
+}

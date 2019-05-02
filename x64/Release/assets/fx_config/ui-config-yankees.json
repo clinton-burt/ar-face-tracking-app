@@ -1,0 +1,49 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 4,
+      "title": "3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 25,
+      "title": "Yankees Hat Filter",
+      "icon": "assets/icons/iconYankeesHat.png",
+      "subMenu": ""
+    },
+    {
+      "id": 24,
+      "title": "Yankees Face Paint Filter",
+      "icon": "assets/icons/New_York_Yankees_icon.png",
+      "subMenu": ""
+    },
+    {
+      "title": "Yankees Judge Filter",
+      "icon": "assets/icons/iconYankeesJudge.png",
+      "JSONsource": "./assets/fx/yankees/yankees_judge.json"
+    },
+    {
+      "title": "Yankees Disguise Filter",
+      "icon": "assets/icons/disguise.png",
+      "JSONsource": "./assets/fx/yankees/yankees_disguise.json"
+    },
+    {
+      "title": "Yankees Kraken Filter",
+      "icon": "assets/icons/kraken.png",
+      "JSONsource": "./assets/fx/yankees/yankees_kraken.json"
+    },
+    {
+      "id": 10,
+      "title": "Yankees Face Swap Filter",
+      "icon": "assets/icons/face_swap_icon.png",
+      "subMenu": ""
+    }
+  ]
+}

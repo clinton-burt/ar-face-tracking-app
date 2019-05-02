@@ -1,0 +1,226 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cowboys.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ],
+			"rightAmbient": [ 0.686275, 0.713726, 0.737255, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bills.png",
+		"suits": [{
+			"leftAmbient": [ 0.854902, 0.129412, 0.152941, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.325490, 0.584314, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/pats.png",
+		"suits": [{
+			"leftAmbient": [ 0.854902, 0.129412, 0.152941, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.156863, 0.325490, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jets.png",
+		"suits": [{
+			"leftAmbient": [ 0.160784, 0.262745, 0.227451, 0.7 ],
+			"rightAmbient": [ 1.000000, 1.000000, 1.000000, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/vikings.png",
+		"suits": [{
+			"leftAmbient": [ 0.309804, 0.149020, 0.517647, 0.7 ],
+			"rightAmbient": [ 1.000000, 0.776471, 0.184314, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/greenbay.png",
+		"suits": [{
+			"leftAmbient": [ 0.160784, 0.262745, 0.227451, 0.7 ],
+			"rightAmbient": [ 1.000000, 0.760784, 0.058824, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chicago.png",
+		"suits": [{
+			"leftAmbient": [ 0.952941, 0.396078, 0.137255, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.078431, 0.247059, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/detroit.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.427451, 0.690196, 0.7 ],
+			"rightAmbient": [ 0.952941, 0.984314, 0.996078, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/denver.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ],
+			"rightAmbient": [ 0.941176, 0.309804, 0.137255, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/kc.png",
+		"suits": [{
+			"leftAmbient": [ 1.000000, 1.000000, 1.000000, 0.7 ],
+			"rightAmbient": [ 0.890196, 0.094118, 0.215686, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chargers.png",
+		"suits": [{
+			"leftAmbient": [ 1.000000, 0.760784, 0.058824, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/raiders.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.733333, 0.768627, 0.796078, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/texans.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.078431, 0.247059, 0.7 ],
+			"rightAmbient": [ 0.772549, 0.070588, 0.188235, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/titans.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ],
+			"rightAmbient": [ 0.270588, 0.584314, 0.823529, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/colts.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.258824, 0.494118, 0.7 ],
+			"rightAmbient": [ 0.694118, 0.729412, 0.749020, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jags.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.839216, 0.635294, 0.164706, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/49ers.png",
+		"suits": [{
+			"leftAmbient": [ 0.776471, 0.658824, 0.466667, 0.7 ],
+			"rightAmbient": [ 0.725490, 0.031373, 0.243137, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cardinals.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.694118, 0.023529, 0.227451, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/rams.png",
+		"suits": [{
+			"leftAmbient": [ 1.000000, 1.000000, 1.000000, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/hawks.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ],
+			"rightAmbient": [ 0.466667, 0.756863, 0.368627, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bucs.png",
+		"suits": [{
+			"leftAmbient": [ 0.203922, 0.192157, 0.172549, 0.7 ],
+			"rightAmbient": [ 0.854902, 0.129412, 0.152941, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/falcons.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.784314, 0.141176, 0.247059, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/panthers.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.603922, 0.854902, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/saints.png",
+		"suits": [{
+			"leftAmbient": [ 0.847059, 0.760784, 0.156863, 0.7 ],
+			"rightAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/dolphins.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.341176, 0.470588, 0.7 ],
+			"rightAmbient": [ 0.956863, 0.509804, 0.129412, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/eagles.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.298039, 0.329412, 0.7 ],
+			"rightAmbient": [ 0.733333, 0.768627, 0.796078, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ny.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.235294, 0.501961, 0.7 ],
+			"rightAmbient": [ 0.694118, 0.729412, 0.749020, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/redskins.png",
+		"suits": [{
+			"leftAmbient": [ 0.588235, 0.066667, 0.235294, 0.7 ],
+			"rightAmbient": [ 1.000000, 0.749020, 0.011765, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bengals.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.941176, 0.309804, 0.137255, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/browns.png",
+		"suits": [{
+			"leftAmbient": [ 0.172549, 0.105882, 0.000000, 0.7 ],
+			"rightAmbient": [ 0.913725, 0.219608, 0.149020, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ravens.png",
+		"suits": [{
+			"leftAmbient": [ 0.172549, 0.176471, 0.541176, 0.7 ],
+			"rightAmbient": [ 0.827451, 0.666667, 0.254902, 0.7 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/steelers.png",
+		"suits": [{
+			"leftAmbient": [ 0.000000, 0.000000, 0.000000, 0.7 ],
+			"rightAmbient": [ 1.000000, 0.760784, 0.058824, 0.7 ]
+		}]
+	}]
+}

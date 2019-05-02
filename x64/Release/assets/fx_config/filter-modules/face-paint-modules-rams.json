@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/rams.png",
+      "suits": [
+        {
+          "leftAmbient": [ 1.000000, 1.000000, 1.000000, 0.7 ],
+          "rightAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

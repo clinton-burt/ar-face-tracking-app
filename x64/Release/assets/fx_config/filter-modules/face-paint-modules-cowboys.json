@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/cowboys.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.000000, 0.164706, 0.360784, 0.7 ],
+          "rightAmbient": [ 0.686275, 0.713726, 0.737255, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

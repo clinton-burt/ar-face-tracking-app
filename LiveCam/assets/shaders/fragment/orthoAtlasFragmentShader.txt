@@ -1,0 +1,26 @@
+#version 400
+
+in vec2 TexCoord;
+
+uniform sampler2D Texture;
+
+uniform vec2 textureScale;
+uniform vec2 textureShift;
+//uniform vec2 textureShift;
+//uniform vec2 leftTopCrop;
+//uniform vec2 rightBottomCrop;
+
+void main()
+{
+/*
+	if (TexCoord.x < leftTopCrop.x || TexCoord.x > rightBottomCrop.x || TexCoord.y < leftTopCrop.y || TexCoord.y > rightBottomCrop.y)
+	{
+		gl_FragColor = vec4(0, 0, 0, 0);
+	}
+	else
+	{
+		gl_FragColor = texture2D(Texture, textureShift + TexCoord * textureScale).rgba;
+	}
+*/
+	gl_FragColor = texture2D(Texture, TexCoord * textureScale + textureShift).rgba;
+}

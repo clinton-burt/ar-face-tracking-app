@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/ny.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.000000, 0.235294, 0.501961, 0.7 ],
+          "rightAmbient": [ 0.694118, 0.729412, 0.749020, 0.7 ]
+        }
+      ]
+    }
+  ]
+}

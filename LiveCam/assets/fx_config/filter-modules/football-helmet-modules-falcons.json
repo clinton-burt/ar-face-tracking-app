@@ -1,0 +1,26 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/icons/falcons_new_school.png",
+      "suits": [
+        {
+          "modelPath": "./assets/fx/falcons/helmet/falcons_helmet_v1.obj",
+          "modelTextures": [
+            "./assets/fx/falcons/helmet/FalconsNormal_ColorMap_v001.png"
+          ]
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/icons/falcons_old_school.png",
+      "suits": [
+        {
+          "modelPath": "./assets/fx/falcons/helmet/falcons_helmet_v1.obj",
+          "modelTextures": [
+            "./assets/fx/falcons/helmet/FalconsRetro_ColorMap_v001.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

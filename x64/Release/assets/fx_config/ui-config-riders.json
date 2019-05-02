@@ -1,0 +1,49 @@
+{
+  "filters": [
+    {
+      "title": "Riders Emoji Filter",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/emoji/emojis.json"
+    },
+    {
+      "id": 4,
+      "title": "Riders 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 48,
+      "title": "Riders Face Paint Filter",
+      "icon": "assets/icons/face_paint_icon_riders.png",
+      "subMenu": ""
+    },
+    {
+      "id": 46,
+      "title": "Riders Helmet Filter",
+      "icon": "assets/icons/football_helmet_riders_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 47,
+      "title": "Riders Watermelon Filter",
+      "icon": "assets/icons/riders_watermelon_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 83,
+      "title": "Riders Pirate Filter",
+      "icon": "assets/icons/pirate.png",
+      "subMenu": ""
+    },
+    {
+      "id": 84,
+      "title": "Riders Gopher Filter",
+      "icon": "assets/icons/gopher.png",
+      "subMenu": ""
+    },
+    {
+      "title": "Riders Halloween Filter",
+      "JSONsource": "./assets/fx/halloween/all-filter-witch-first.json"
+    }
+  ]
+}

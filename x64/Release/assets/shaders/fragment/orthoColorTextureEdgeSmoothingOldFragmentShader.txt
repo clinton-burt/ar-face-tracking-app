@@ -1,0 +1,156 @@
+#version 400
+
+in vec2 TexCoord;
+in vec3 Position;
+
+struct Line
+{
+	vec2 A;
+	vec2 B;
+	float length;
+};
+
+uniform vec4 leftColor;
+uniform vec4 rightColor;
+
+uniform bool hasTexture;
+uniform sampler2D Texture;
+
+uniform bool hasAlphaMask;
+uniform sampler2D AlphaMaskTexture;
+
+uniform float edgeFadingDistance;
+uniform Line edgesLeft[24];
+uniform Line edgesRight[24];
+uniform Line edgesMiddleTop[7];
+uniform Line edgesMiddleBottom[1];
+
+uniform bool isLeft;
+
+float getVertexDistance(vec2 point, vec2 vertex, float min)
+{
+	vec2 radius = point - vertex;
+	float dist = dot(radius, radius);
+	if (dist < edgeFadingDistance * edgeFadingDistance && dist < min * min)
+	{
+		min = sqrt(dist);
+	}
+	
+	return min;
+}
+
+float getEdgeDistance(vec2 point, Line edge, float min)
+{
+	vec2 direction = edge.B - edge.A;
+	
+	if (dot(direction, point - edge.A) > 0 &&
+		dot(-direction, point - edge.B) > 0)
+	{
+		// the point is projected on the line segment between its boundary points
+
+		float dist = abs((direction.y * point.x - direction.x * point.y + edge.B.x * edge.A.y - edge.B.y * edge.A.x) / edge.length);
+		if (dist < min)
+		{
+			min = dist;
+		}
+	}
+	else
+	{
+		min = getVertexDistance(point, edge.A, min);
+	}
+	
+	return min;
+}
+
+float getAlphaScale(vec2 point)
+{
+	float min = 1e6;
+	
+	for (int i = 0; i < 24; ++i)
+	{
+		Line edge = isLeft ? edgesLeft[i] : edgesRight[i];
+		
+		min = getEdgeDistance(point, edge, min);
+	}
+	
+	min = getVertexDistance(point, isLeft ? edgesLeft[23].B : edgesRight[23].B, min);
+	
+	return min < edgeFadingDistance ? min / edgeFadingDistance : 1.0;
+}
+
+vec4 getMixedColorOnMiddleLine(vec2 point)
+{
+	float newMin;
+	float min = 1e6;
+	int index = 0;
+	
+	for (int i = 0; i < 7; ++i)
+	{
+		newMin = getEdgeDistance(point, edgesMiddleTop[i], min);
+		index = newMin == min ? index : i;
+		min = newMin;
+	}
+	
+	newMin = getVertexDistance(point, edgesMiddleTop[6].B, min);
+	index = newMin == min ? index : 6;
+	min = newMin;
+	
+	newMin = getEdgeDistance(point, edgesMiddleBottom[0], min);
+	index = newMin == min ? index : 7;
+	min = newMin;
+	
+	newMin = getVertexDistance(point, edgesMiddleBottom[0].B, min);
+	index = newMin == min ? index : 7;
+	min = newMin;
+	
+	if (min > edgeFadingDistance / 2)
+	{
+		return isLeft ? leftColor : rightColor;
+	}
+	
+	min = min / edgeFadingDistance + 0.5;
+	
+	Line edge = index == 7 ? edgesMiddleBottom[0] : edgesMiddleTop[index];
+	
+	vec4 thisColor, thatColor;
+	
+	if (cross(vec3(point - edge.A, 0), vec3(edge.B - edge.A, 0)).z > 0)
+	{
+		thisColor = rightColor;
+		thatColor = leftColor;
+	}
+	else
+	{
+		thisColor = leftColor;
+		thatColor = rightColor;
+	}
+	
+	return vec4(thisColor.rgb * thisColor.a * min + thatColor.rgb * thatColor.a * (1 - min),
+		thisColor.a * min + thatColor.a * (1 - min));
+}
+
+void main()
+{
+	if (hasTexture)
+	{
+		gl_FragColor = texture2D(Texture, TexCoord).rgba;
+	}
+	else
+	{
+		gl_FragColor = vec4(0, 0, 0, 0);
+	}
+	
+	float alphaFromMask = 1;
+	
+	if (hasAlphaMask)
+	{
+		alphaFromMask = texture2D(AlphaMaskTexture, TexCoord).r;
+	}
+	
+	vec4 baseColor = getMixedColorOnMiddleLine(Position.xy);
+	
+	gl_FragColor.rgb = baseColor.rgb * baseColor.a * (1 - gl_FragColor.a) * alphaFromMask + gl_FragColor.rgb * gl_FragColor.a;
+	
+	gl_FragColor.a = (baseColor.a * alphaFromMask + gl_FragColor.a) * getAlphaScale(Position.xy);
+	
+}

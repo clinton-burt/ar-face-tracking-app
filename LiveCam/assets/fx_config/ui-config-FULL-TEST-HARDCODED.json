@@ -1,0 +1,339 @@
+{
+  "filters": [
+    {
+      "title": "DOG_CAM_EFFECT",
+      "id": "4",
+      "icon": ""
+    },
+    {
+      "title": "RED_LEGS_EFFECT",
+      "id": "1",
+      "icon": ""
+    },
+    {
+      "title": "BOUFFANT_EFFECT",
+      "id": "2",
+      "icon": ""
+    },
+    {
+      "title": "LOGO_EFFECT",
+      "id": "3",
+      "icon": ""
+    },
+    {
+      "title": "PINCH",
+      "id": "6",
+      "icon": ""
+    },
+    {
+      "title": "FACEPAINT",
+      "id": "7",
+      "icon": ""
+    },
+    {
+      "title": "PLAYER_EMOJI_EFFECT",
+      "id": "8",
+      "icon": ""
+    },
+    {
+      "title": "HEART_EFFECT",
+      "id": "9",
+      "icon": ""
+    },
+    {
+      "title": "FACE_SWAP_EFFECT",
+      "id": "10",
+      "icon": ""
+    },
+    {
+      "title": "BOBBLE_HEAD_EFFECT",
+      "id": "11",
+      "icon": ""
+    },
+    {
+      "title": "FOOTBALL_HELMET_EFFECT",
+      "id": "12",
+      "icon": ""
+    },
+    {
+      "title": "DRAGON_EFFECT",
+      "id": "13",
+      "icon": ""
+    },
+    {
+      "title": "BASEBALL_HAT_EFFECT",
+      "id": "14",
+      "icon": ""
+    },
+    {
+      "title": "EMOJI_3D_EFFECT",
+      "id": "15",
+      "icon": ""
+    },
+    {
+      "title": "HOCKEY_HELMET_EFFECT",
+      "id": "16",
+      "icon": ""
+    },
+    {
+      "title": "KNIGHT_HELMET_EFFECT",
+      "id": "17",
+      "icon": ""
+    },
+    {
+      "title": "EMOJI_FILTER_CAP_EFFECT",
+      "id": "19",
+      "icon": ""
+    },
+    {
+      "title": "BILLY_MARLIN_EFFECT",
+      "JSONsource": "./assets/fx/marlins/billy_marlin.json",
+      "icon": ""
+    },
+    {
+      "title": "MARLINS_HAT_EFFECT",
+      "id": "21",
+      "icon": ""
+    },
+    {
+      "title": "STANTON_HELMET_EFFECT",
+      "JSONsource": "./assets/fx/marlins/stanton_helmet.json",
+      "icon": ""
+    },
+    {
+      "title": "PHILLIES_HAT_EFFECT",
+      "id": "23",
+      "icon": ""
+    },
+    {
+      "title": "FACEPAINT_YANKEES",
+      "id": "24",
+      "icon": ""
+    },
+    {
+      "title": "YANKEES_HAT_EFFECT",
+      "id": "25",
+      "icon": ""
+    },
+    {
+      "title": "YANKEES_JUDGE_EFFECT",
+      "id": "26",
+      "icon": ""
+    },
+    {
+      "title": "CONFERENCE_LOGO_EFFECT",
+      "id": "27",
+      "icon": ""
+    },
+    {
+      "title": "SOCCER_BALL_EFFECT",
+      "id": "28",
+      "icon": ""
+    },
+    {
+      "title": "SCARF_HAT_EFFECT",
+      "id": "29",
+      "icon": ""
+    },
+    {
+      "title": "PANTHERS_HELMET_EFFECT",
+      "id": "30",
+      "icon": ""
+    },
+    {
+      "title": "SIR_PURR_EFFECT",
+      "id": "31",
+      "icon": ""
+    },
+    {
+      "title": "FOOTBALL_PLAYER_EMOJIS_EFFECT",
+      "id": "32",
+      "icon": ""
+    },
+    {
+      "title": "FOOTBALL_PLAYER_EMOJIS_FACE_EFFECT",
+      "id": "33",
+      "icon": ""
+    },
+    {
+      "title": "EMOJIS_OPENGL_EFFECT",
+      "id": "35",
+      "icon": ""
+    },
+    {
+      "title": "PANTHERS_PAINT_OPENGL_EFFECT",
+      "id": "36",
+      "icon": ""
+    },
+    {
+      "title": "ANGEL_CRAB_EFFECT",
+      "JSONsource": "./assets/fx/marlins/angel_the_crab.json",
+      "icon": ""
+    },
+    {
+      "title": "BOB_SHARK_EFFECT",
+      "JSONsource": "./assets/fx/marlins/bob_the_shark.json",
+      "icon": ""
+    },
+    {
+      "title": "JULIO_OCTOPUS_EFFECT",
+      "JSONsource": "./assets/fx/marlins/julio_the_octopus.json",
+      "icon": ""
+    },
+    {
+      "title": "SPIKE_MASCOT_EFFECT",
+      "JSONsource": "./assets/fx/marlins/spike_the_mascot.json",
+      "icon": ""
+    },
+    {
+      "title": "GIANT_PLAYERS_EFFECT",
+      "id": "41",
+      "icon": ""
+    },
+    {
+      "title": "PANTHERS_WIG_EFFECT",
+      "id": "42",
+      "icon": ""
+    },
+    {
+      "title": "PANTHERS_BEANIE_OPENGL_EFFECT",
+      "id": "45",
+      "icon": ""
+    },
+    {
+      "title": "RIDERS_HELMET_EFFECT",
+      "id": "46",
+      "icon": ""
+    },
+    {
+      "title": "RIDERS_WATERMELON_EFFECT",
+      "id": "47",
+      "icon": ""
+    },
+    {
+      "title": "FACEPAINT_SIMPLE",
+      "id": "48",
+      "icon": ""
+    },
+    {
+      "title": "REDS_PLAYER_EMOJI_EFFECT",
+      "id": "49",
+      "icon": ""
+    },
+    {
+      "title": "PIGEON_MASK_EFFECT",
+      "id": "50",
+      "icon": ""
+    },
+    {
+      "title": "PHILLIES_PHANATIC_EFFECT",
+      "id": "51",
+      "icon": ""
+    },
+    {
+      "title": "PHILLIES_SMILE_EFFECT",
+      "id": "52",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_SWOOP_HEAD_EFFECT",
+      "id": "54",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_SWOOP_BEAK_EFFECT",
+      "id": "55",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_MINI_BIRDS_EFFECT",
+      "id": "56",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_BLACK_EYE_EFFECT",
+      "id": "57",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_MILITARY_HAT_EFFECT",
+      "id": "58",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_BASEBALL_HAT_EFFECT",
+      "id": "59",
+      "icon": ""
+    },
+    {
+      "title": "EAGLES_CRAZY_HAIR_EFFECT",
+      "id": "60",
+      "icon": ""
+    },
+    {
+      "title": "TESLA_HELMET_EFFECT",
+      "id": "61",
+      "icon": ""
+    },
+    {
+      "title": "COWBOYS_HELMET_EFFECT",
+      "id": "62",
+      "icon": ""
+    },
+    {
+      "title": "COWBOYS_ROWDY_EFFECT",
+      "id": "63",
+      "icon": ""
+    },
+    {
+      "title": "COWBOYS_DOG_EFFECT",
+      "id": "64",
+      "icon": ""
+    },
+    {
+      "title": "COWBOYS_FACE_PAINT_EFFECT",
+      "id": "65",
+      "icon": ""
+    },
+    {
+      "title": "FALCONS_FACE_PAINT_CAMO_EFFECT",
+      "id": "67",
+      "icon": ""
+    },
+    {
+      "title": "BUCS_FACE_PAINT_EFFECT",
+      "id": "68",
+      "icon": ""
+    },
+    {
+      "title": "HIPPSTER_BEARD_EFFECT",
+      "id": "69",
+      "icon": ""
+    },
+    {
+      "title": "JETS_MOHAWK_EFFECT",
+      "id": "70",
+      "icon": ""
+    },
+    {
+      "title": "COWBOYS_ALL_EFFECT",
+      "id": "71",
+      "icon": ""
+	},
+    {
+      "title": "BILLS_FACE_PAINT_EFFECT",
+      "id": "72",
+      "icon": ""
+	},
+    {
+      "title": "CHARGERS_PAINT_EFFECT",
+      "id": "73",
+      "icon": ""
+	},
+    {
+      "title": "YANKEES_BOBBLE_BOY",
+      "id": "74",
+      "icon": ""
+	}
+	]
+}

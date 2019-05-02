@@ -1,0 +1,21 @@
+#version 400
+layout (location = 0) in vec3 VertexPosition;
+layout (location = 1) in vec2 VertexTexCoord;
+
+out vec2 TexCoord;
+
+uniform mat4 ProjectionMatrix;
+uniform mat4 ModelViewMatrix;
+
+void main()
+{
+	gl_Position = ModelViewMatrix * vec4(VertexPosition, 1.0);
+	
+	float factor = -gl_Position.z;
+	
+	gl_Position = ProjectionMatrix * gl_Position;
+	
+	gl_Position.z /= factor;
+	
+	TexCoord = VertexTexCoord;
+}

@@ -1,0 +1,8 @@
+{
+  "filters": [{
+        "id": 61,
+        "title": "Tesla Helmet Filter",
+        "icon": "assets/icons/teslaHelmet.png",
+        "subMenu": ""
+    }]
+}

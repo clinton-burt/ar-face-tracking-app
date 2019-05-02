@@ -1,0 +1,10 @@
+{
+  "filters": [
+	{
+      "id": 89,
+      "title": "Big Eyes",
+      "icon": "assets/icons/falcons_new_school.png",
+      "subMenu": ""
+	}
+  ]
+}

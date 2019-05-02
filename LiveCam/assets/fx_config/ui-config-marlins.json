@@ -1,0 +1,50 @@
+{
+  "filters": [
+    {
+      "title": "Emoji Filter",
+      "icon": "./assets/images/emoti/Asset 3@20x.png",
+      "JSONsource": "./assets/fx_config/models/emojis.json"
+    },
+    {
+      "id": 4,
+      "title": "3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/billy_marlin.json",
+      "title": "Billy Marlin Filter",
+      "icon": "assets/icons/billyMarlin.png"
+    },
+    {
+      "id": 21,
+      "title": "Marlins Hat Filter",
+      "icon": "assets/icons/Marlins_hat_v002.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/stanton_helmet.json",
+      "title": "Stanton Helmet Filter",
+      "icon": "assets/icons/stantonHelmet_v002.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/angel_the_crab.json",
+      "title": "Angel the Crab Filter",
+      "icon": "assets/icons/emoji_filters_icon.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/bob_the_shark.json",
+      "title": "Bob the Shark Filter",
+      "icon": "assets/icons/bobTheSharkIcon.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/julio_the_octopus.json",
+      "title": "Julio the Octopus Filter",
+      "icon": "assets/icons/julioTheOctopusIcon.png"
+    },
+    {
+      "JSONsource": "./assets/fx/marlins/spike_the_mascot.json",
+      "title": "Spike the Maskot Filter",
+      "icon": "assets/icons/spikeTheMascotIcon.png"
+    }
+  ]
+}

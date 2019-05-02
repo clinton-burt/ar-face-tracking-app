@@ -1,0 +1,49 @@
+{	
+	"iconPath": "./assets/fx/red_white_blue_facepaint/icon01.png",
+	"use frame light params": "true",
+	"use face light params": "true",
+
+  "models": [
+    {
+      "type": "FacePaintModel",
+      "name": "Paint",
+      "headTextureMap": "true"
+    }
+  ],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/orthoColorTextureEdgeSmoothingVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/orthoColorTextureEdgeSmoothingFragmentShader.txt",
+      "depthTest": "false",
+      "TAG": "facePaint"
+    }
+  ],
+	
+  "modules": [
+    {
+      "iconPath": "./assets/fx/red_white_blue_facepaint/icon01.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "leftTexture": "./assets/fx/red_white_blue_facepaint/1.jpg",
+          "rightTexture": "./assets/fx/red_white_blue_facepaint/1.jpg",
+          "alphaMask": "./assets/alphaMasks/crude_paint_for_headTexMap.png",
+          "alphaMaskPower": 1
+        }
+      ]
+    },
+    {
+      "iconPath": "./assets/fx/red_white_blue_facepaint/icon02.png",
+      "suits": [
+        {
+          "renderParamsID": 0,
+          "leftTexture": "./assets/fx/red_white_blue_facepaint/2.jpg",
+          "rightTexture": "./assets/fx/red_white_blue_facepaint/2.jpg",
+          "alphaMask": "./assets/alphaMasks/crude_paint_for_headTexMap.png",
+          "alphaMaskPower": 1
+        }
+      ]
+    }
+  ]
+}

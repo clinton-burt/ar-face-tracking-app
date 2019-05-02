@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="/">
+    <file>images/DeleteButton.png</file>
+    <file>images/FileButton.png</file>
+    <file>images/AddButton.png</file>
+    <file>images/Create.png</file>
+    <file>images/Delete.png</file>
+    <file>images/Edit.png</file>
+    <file>images/ImportExport.png</file>
+    <file>images/AppIcon.png</file>
+    <file>images/BG.png</file>
+    <file>images/LOGO.png</file>
+    <file>images/BTN FILTER ICONS.png</file>
+    <file>images/SNAP BLAST ICON.png</file>
+    <file>images/BTN.png</file>
+    <file>images/BTN_pb.png</file>
+    <file>images/cell.png</file>
+    <file>images/cell_checked.png</file>
+    <file>images/arrow.png</file>
+    <file>images/BTN LOGO.png</file>
+    <file>images/BTN DOWN.png</file>
+    <file>images/BTN UP.png</file>
+  </qresource>
+</RCC>

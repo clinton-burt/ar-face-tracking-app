@@ -1,0 +1,173 @@
+{
+    "JSON root": "true",
+    "title": "OKC Rumble",
+    "iconPath": "okc_rumble.png",
+    "models": [
+        {
+            "name": "Rumble",
+            "type": "3DModel",
+            "OBJs": [
+                "Fur.obj",
+                "Head.obj"
+            ],
+            "MTLs": [
+                "Fur.mtl",
+                "Head.mtl"
+            ],
+            "modelShift": [
+                "0",
+                "-0.230000004",
+                "0"
+            ],
+            "modelScale": "2.43000007"
+        }
+    ],
+    "renderParams": [
+        {
+            "vertexShader": "simpleVertexShader.txt",
+            "fragmentShader": "phongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0.5",
+                    "0.5",
+                    "0.5"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0.5",
+                    "0.5",
+                    "0.5"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "specularPower",
+                    "1"
+                ]
+            ]
+        },
+        {
+            "vertexShader": "noTextureVertexShader.txt",
+            "fragmentShader": "noTexturePhongFragmentShader.txt",
+            "uniforms": [
+                [
+                    "ambientLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "cameraPos",
+                    "0",
+                    "0",
+                    "0",
+                    "1"
+                ],
+                [
+                    "diffuseLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "lightPos",
+                    "0.200000003",
+                    "0.200000003",
+                    "1",
+                    "0"
+                ],
+                [
+                    "materialColor",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                [
+                    "reflectionRatio",
+                    "0"
+                ],
+                [
+                    "specularLight",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                [
+                    "specularPower",
+                    "1"
+                ]
+            ]
+        }
+    ],
+    "initialModules": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+    ],
+    "modules": [
+        {
+            "iconPath": "okc_rumble.png",
+            "suits": [
+                {
+                    "modelTextures": [
+                        "Hair.png",
+                        "Beard.png",
+                        "Beard.png",
+                        "Hair.png",
+                        "",
+                        "Tex01.jpg",
+                        "Tex01.jpg",
+                        "Tex01.jpg",
+                        "Tex01.jpg",
+                        "Tex01.jpg"
+                    ],
+                    "renderParamsIDs": [
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "1",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                    ]
+                }
+            ]
+        }
+    ]
+}

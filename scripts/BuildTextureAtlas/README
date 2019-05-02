@@ -1,0 +1,14 @@
+This is a short python script that takes a folder of images and generates a texture atlas from it.
+The images will be cropped to their non transparent bounding boxes. The script generates a CSS file and JSON file
+that can be used together with the texture atlas as well as an illustrative SVG/animation showing how the texture atlas is created.
+
+This is old BuildAtlasTexture_Original_DontUse.py script description above
+
+Usage of BuildAtlasTextureSimple:
+
+0) script suppose all images to have equal size and to be numbered continuously from 0.png to N.png
+1) set GL_MAX_TEXTURE_SIZE in the script file, if you need larger value and this size is supported by OpenGL
+2) put your images into the "input" folder
+3) start the script
+4) if you got a GL_MAX_TEXTURE_SIZE limit violation error, try to resize frames with ResizeImages with correct size factor
+5) check the "output"

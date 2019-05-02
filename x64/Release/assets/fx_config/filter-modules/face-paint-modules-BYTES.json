@@ -1,0 +1,226 @@
+{
+	"modules": [{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cowboys.png",
+		"suits": [{
+			"leftAmbient": [ 0, 42, 92 ],
+			"rightAmbient": [ 175, 182, 188 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bills.png",
+		"suits": [{
+			"leftAmbient": [ 218, 33, 39 ],
+			"rightAmbient": [ 0, 83, 149 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/pats.png",
+		"suits": [{
+			"leftAmbient": [ 218, 33, 39 ],
+			"rightAmbient": [ 0, 40, 83 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jets.png",
+		"suits": [{
+			"leftAmbient": [ 41, 67, 58 ],
+			"rightAmbient": [ 255, 255, 255 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/vikings.png",
+		"suits": [{
+			"leftAmbient": [ 79, 38, 132 ],
+			"rightAmbient": [ 255, 198, 47 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/greenbay.png",
+		"suits": [{
+			"leftAmbient": [ 41, 67, 58 ],
+			"rightAmbient": [ 255, 194, 15 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chicago.png",
+		"suits": [{
+			"leftAmbient": [ 243, 101, 35 ],
+			"rightAmbient": [ 0, 20, 63 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/detroit.png",
+		"suits": [{
+			"leftAmbient": [ 0, 109, 176 ],
+			"rightAmbient": [ 243, 251, 254 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/denver.png",
+		"suits": [{
+			"leftAmbient": [ 0, 42, 92 ],
+			"rightAmbient": [ 240, 79, 35 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/kc.png",
+		"suits": [{
+			"leftAmbient": [ 255, 255, 255 ],
+			"rightAmbient": [ 227, 24, 55 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/chargers.png",
+		"suits": [{
+			"leftAmbient": [ 255, 194, 15 ],
+			"rightAmbient": [ 0, 42, 92 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/raiders.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 187, 196, 203 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/texans.png",
+		"suits": [{
+			"leftAmbient": [ 0, 20, 63 ],
+			"rightAmbient": [ 197, 18, 48 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/titans.png",
+		"suits": [{
+			"leftAmbient": [ 0, 42, 92 ],
+			"rightAmbient": [ 69, 149, 210 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/colts.png",
+		"suits": [{
+			"leftAmbient": [ 0, 66, 126 ],
+			"rightAmbient": [ 177, 186, 191 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/jags.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 214, 162, 42 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/49ers.png",
+		"suits": [{
+			"leftAmbient": [ 198, 168, 119 ],
+			"rightAmbient": [ 185, 8, 62 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/cardinals.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 177, 6, 58 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/rams.png",
+		"suits": [{
+			"leftAmbient": [ 255, 255, 255 ],
+			"rightAmbient": [ 0, 42, 92 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/hawks.png",
+		"suits": [{
+			"leftAmbient": [ 0, 42, 92 ],
+			"rightAmbient": [ 119, 193, 94 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bucs.png",
+		"suits": [{
+			"leftAmbient": [ 52, 49, 44 ],
+			"rightAmbient": [ 218, 33, 39 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/falcons.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 200, 36, 63 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/panthers.png",
+		"suits": [{
+			"leftAmbient": [ 0, 154, 218 ],
+			"rightAmbient": [ 0, 0, 0 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/saints.png",
+		"suits": [{
+			"leftAmbient": [ 216, 194, 40 ],
+			"rightAmbient": [ 0, 0, 0 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/dolphins.png",
+		"suits": [{
+			"leftAmbient": [ 0, 87, 120 ],
+			"rightAmbient": [ 244, 130, 33 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/eagles.png",
+		"suits": [{
+			"leftAmbient": [ 0, 76, 84 ],
+			"rightAmbient": [ 187, 196, 203 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ny.png",
+		"suits": [{
+			"leftAmbient": [ 0, 60, 128 ],
+			"rightAmbient": [ 177, 186, 191 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/redskins.png",
+		"suits": [{
+			"leftAmbient": [ 150, 17, 60 ],
+			"rightAmbient": [ 255, 191, 3 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/bengals.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 240, 79, 35 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/browns.png",
+		"suits": [{
+			"leftAmbient": [ 44, 27, 0 ],
+			"rightAmbient": [ 233, 56, 38 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/ravens.png",
+		"suits": [{
+			"leftAmbient": [ 44, 45, 138 ],
+			"rightAmbient": [ 211, 170, 65 ]
+		}]
+	},
+	{
+		"iconPath": "./assets/fx/nfl_teams/btn_icons/steelers.png",
+		"suits": [{
+			"leftAmbient": [ 0, 0, 0 ],
+			"rightAmbient": [ 255, 194, 15 ]
+		}]
+	}]
+}

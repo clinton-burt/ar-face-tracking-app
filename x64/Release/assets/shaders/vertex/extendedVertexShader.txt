@@ -1,0 +1,30 @@
+#version 400
+layout (location = 0) in vec3 VertexPosition;
+layout (location = 1) in vec3 VertexNormal;
+layout (location = 2) in vec2 VertexTexCoord;
+layout (location = 3) in vec3 VertexTangent;
+layout (location = 4) in vec3 VertexBitangent;
+
+out vec3 Position;
+out vec3 Normal;
+out vec3 Tangent;
+out vec3 Bitangent;
+out vec2 TexCoord;
+
+uniform mat4 ModelViewMatrix;
+uniform mat4 ProjectionMatrix;
+uniform mat3 ModelViewMatrix3x3;
+
+void main()
+{
+ mat4 mvp= ProjectionMatrix * ModelViewMatrix;
+ 
+ Normal = normalize(ModelViewMatrix3x3 * normalize(VertexNormal));
+ Tangent = normalize(ModelViewMatrix3x3 * normalize(VertexTangent));
+ Bitangent = normalize(ModelViewMatrix3x3 * normalize(VertexBitangent));
+ 
+ Position = vec3( ModelViewMatrix * vec4(VertexPosition,1.0) );
+ gl_Position = mvp * vec4(VertexPosition,1.0);
+ 
+ TexCoord = VertexTexCoord;
+}

@@ -1,0 +1,69 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Eagles Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 48,
+      "title": "Eagles Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_riders.png",
+      "subMenu": ""
+    },
+    {
+      "id": 4,
+      "title": "Eagles 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "title": "Eagles Helmet Filter",
+      "icon": "assets/icons/eagles_helmet.png",
+      "JSONsource": "./assets/fx/eagles/eagles-helmet.json"
+    },
+    {
+      "id": 57,
+      "title": "Eagles Black Eye Filter",
+      "icon": "assets/icons/eagles_blackeye.png",
+      "subMenu": ""
+    },
+    {
+      "id": 54,
+      "title": "Eagles Swoop Head Filter",
+      "icon": "assets/icons/eagle_swoop_icon.png",
+      "subMenu": ""
+    },
+    {
+      "id": 55,
+      "title": "Eagles Swoop Beak Filter",
+      "icon": "assets/icons/eagle-beak.png",
+      "subMenu": ""
+    },
+    {
+      "id": 59,
+      "title": "Eagles Baseball Hat Filter",
+      "icon": "assets/icons/eagles_baseball_hat.png",
+      "subMenu": ""
+    },
+    {
+      "id": 58,
+      "title": "Eagles Military Hat Filter",
+      "icon": "assets/icons/eagles_military_hat.png",
+      "subMenu": ""
+    },
+    {
+      "id": 56,
+      "title": "Eagles Mini Eagles Filter",
+      "icon": "assets/icons/eagles_mini_birds.png",
+      "subMenu": ""
+    },
+    {
+      "id": 60,
+      "title": "Eagles Crazy Filter",
+      "icon": "assets/icons/eagles_crazy_hair.png",
+      "subMenu": ""
+    }
+  ]
+}

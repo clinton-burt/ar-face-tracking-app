@@ -1,0 +1,14 @@
+{
+    "filters": [
+	{
+        "id": 35,
+        "title": "Emoji Filter",
+        "icon": "assets/images/emoti/Asset 3@20x.png",
+        "subMenu": "page_cam_emoti"
+    },	{
+        "id": 41,
+        "title": "Player Emoji Filter",
+        "icon": "assets/icons/Belt.PNG",
+        "subMenu": "page_cam_emoji_players"
+    }]
+}

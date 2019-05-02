@@ -1,0 +1,13 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/eagles.png",
+      "suits": [
+        {
+          "leftAmbient": [ 0.000000, 0.298039, 0.329412, 0.75 ],
+          "rightAmbient": [ 0.733333, 0.768627, 0.796078, 0.75 ]
+        }
+      ]
+    }
+  ]
+}

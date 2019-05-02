@@ -1,0 +1,142 @@
+#version 400
+in vec3 Position;
+in vec3 Normal;
+in vec2 TexCoord;
+in vec2 FaceTexCoord;
+
+uniform sampler2D Texture;
+uniform vec2 FaceTextureSize;
+
+#define POINT_COUNT 23
+
+uniform vec2 fp[POINT_COUNT];
+uniform vec2 AppliedFaceTextureCenter;
+uniform  vec4 lightPos;
+
+uniform vec4 cameraPos;
+uniform vec3 ambientLight;
+uniform vec3 specularLight;
+
+
+void phongModel( vec3 position, vec3 norm, out vec3 ambAndDiff, out vec3 spec ) 
+{
+    vec3 s = normalize(vec3(lightPos) - position);
+    vec3 v = normalize(-position.xyz);
+    vec3 r = reflect( -s, norm );
+
+    float sDotN = max( dot(s,norm), 0.0 );
+    vec3 diffuse = vec3(0.1, 0.1, 0.1) * sDotN;
+    spec = vec3(0.0);
+    if( sDotN > 0.0 )
+    {
+		vec3 cameraPosPos = cameraPos.xyz;
+		spec = specularLight*pow(max( dot(r, normalize(cameraPosPos)), 0.0 ), 80.0);
+    }
+    ambAndDiff = ambientLight + diffuse;
+}
+
+float poltergeist(in vec2 coordinate, in float seed)
+{
+    return fract(sin(dot(coordinate*seed, vec2(12.9898, 78.233)))*43758.5453);
+}
+
+void main() {
+    vec3 ambAndDiff, spec;
+	vec3 nx = normalize(Normal);
+	
+	phongModel(Position, nx, ambAndDiff, spec);
+	
+	vec3 cameraPosPos = vec3(0.0, 1.0, 1.0);
+    vec3 I = normalize(Position - cameraPosPos);
+    vec3 R = reflect(I, nx);
+	
+	float cosa = abs(nx.x);
+	
+	if (cosa < 0.01)
+	{
+		cosa = 0.01;
+	}
+	
+	vec2 ct = FaceTexCoord - AppliedFaceTextureCenter;
+	
+	float signd = 0;
+	vec2 relatedPoint = fp[0];
+	
+	vec2 mct = ct;
+	vec2 mct2 = ct;
+	
+	float tx = 0;
+	float lx = 0;
+	
+	int i2 = 0;
+		
+	for(int i=0;i<POINT_COUNT;i++){
+		
+		i2 = i + 1;
+		
+		if (i2 == POINT_COUNT)
+		{
+			i2 = 0;
+		}
+	
+		float a = (fp[i2].y - fp[i].y);
+		float b = (fp[i2].x - fp[i].x);
+		
+		float det = (- b) * ct.y + a * ct.x;
+		float detT = fp[i].x * ct.y - fp[i].y * ct.x;
+		float detL = - b * fp[i].y + a * fp[i].x;
+		
+		float t = detT / det;
+		float l = detL / det;
+		if (l < 0.0 || l > 1.0)
+		{
+		signd = signd + 1;
+		}
+		
+		if (l > 0.0 && l <= 1.0 && t > 0.0 && t <= 1.0)
+		{
+			tx = t;
+			lx = l;
+			relatedPoint.x = ct.x * l;
+			relatedPoint.y = ct.y * l;
+			
+			float invl = 1/l;
+			float x = (invl - 1);
+			
+			vec2 dRelatedPoint;
+			
+			dRelatedPoint.x = relatedPoint.x * (cos(15*(x + poltergeist(TexCoord, 100)))*0.06-0.08);
+			dRelatedPoint.y = relatedPoint.y * (cos(15*(x + poltergeist(TexCoord, 900)))*0.06-0.08);
+			
+			vec2 dRelatedPoint2;
+			
+			dRelatedPoint2.x = relatedPoint.x * (cos(15*(x))*0.06-0.08);
+			dRelatedPoint2.y = relatedPoint.y * (cos(15*(x))*0.06-0.08);
+			
+			mct = relatedPoint + dRelatedPoint;
+			mct2 = relatedPoint + dRelatedPoint2;
+		}
+	}
+	
+	vec2 newFaceTexCoord = ct + AppliedFaceTextureCenter;
+		
+	vec3 textureMixedColor;
+	
+	if (signd == POINT_COUNT)
+	{
+	    textureMixedColor = texture2D(Texture, newFaceTexCoord).rgb;
+	}
+	else
+	{
+		
+		vec2 fxTexCoord = mct2 + AppliedFaceTextureCenter;
+
+	    textureMixedColor = texture2D(Texture, fxTexCoord).rgb;
+	}
+    
+	vec4 texColor;
+	texColor = vec4(textureMixedColor, 1.0);
+    texColor = texColor + vec4(spec, 1.0);
+	
+	gl_FragColor = texColor;
+}

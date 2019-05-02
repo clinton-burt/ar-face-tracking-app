@@ -1,0 +1,29 @@
+#version 400
+
+uniform vec4 leftColor;
+uniform vec4 rightColor;
+
+uniform bool hasTexture;
+uniform sampler2D Texture;
+
+uniform bool isLeft;
+
+in vec2 TexCoord;
+
+void main()
+{
+	if (hasTexture)
+	{
+		gl_FragColor = texture2D(Texture, TexCoord).rgba;
+	}
+	else
+	{
+		gl_FragColor = vec4(0, 0, 0, 0);
+	}
+	
+	vec4 baseColor = isLeft ? leftColor : rightColor;
+	
+	gl_FragColor.rgb = baseColor.rgb * baseColor.a * (1 - gl_FragColor.a) + gl_FragColor.rgb * gl_FragColor.a;
+	
+	gl_FragColor.a = baseColor.a + gl_FragColor.a;
+}

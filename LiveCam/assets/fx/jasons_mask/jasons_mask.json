@@ -1,0 +1,51 @@
+{	
+	"iconPath": "./assets/fx/jasons_mask/jasons_mask.png",
+
+	"models": [
+		{
+			"type": "DepthMask",
+			"modelScale": 1.8,
+			"zOffset": -0.1,
+			"draw2DMask": "false"
+		},
+		{
+			"type": "3DModel",
+			"name": "Jasons Mask",
+			"OBJ": "./assets/fx/jasons_mask/jasons_mask.obj",
+			"modelScale": 1.8,
+			"modelShift": [ 0, -0.13, 0.25 ]
+		}
+	],
+
+  "renderParams": [
+    {
+      "vertexShader": "./assets/shaders/vertex/simpleVertexShader.txt",
+      "fragmentShader": "./assets/shaders/fragment/phongFragmentShader.txt",
+      "cullFace": "false",
+      "alphaTest": "true",
+      "blend": "true",
+      "uniforms": [
+        [ "cameraPos", 0, 0, 0, 1 ],
+        [ "lightPos", 0.5, 1, 1, 0 ],
+        [ "ambientLight", 0.5, 0.5, 0.5 ],
+        [ "diffuseLight", 0.5, 0.5, 0.5 ],
+        [ "specularLight", 0, 0, 0 ],
+        [ "specularPower", 1 ]
+      ]
+    }
+  ],
+
+  "modules": [
+    {
+      "iconPath": "./assets/fx/jasons_mask/jasons_mask.png",
+      "suits": [
+        {
+          "modelTextures": [
+            "./assets/fx/jasons_mask/tex/jasons_mask.png"
+          ],
+          "renderParamsIDs": [ 0 ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/icons/falcons_new_school.png",
+      "suits": [
+        {
+          "modelPath": "./assets/fx/eagles/football_helmet/Eagles_Helmet_v002.obj",
+          "modelTextures": [
+            "./assets/fx/eagles/football_helmet/tex/Helmet_eagles_ColorMap_3_1.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

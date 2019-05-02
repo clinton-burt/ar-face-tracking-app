@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "iconPath": "./assets/fx/nfl_teams/btn_icons/chargers.png",
+      "suits": [
+        {
+          "modelTextures": [
+            "./assets/fx/chargers/helmet/tex/Helmet_V5_HelmetStripe_UVMap.jpg",
+            "./assets/fx/chargers/helmet/tex/Helmet_V5_FaceMask_UVMap.jpg",
+            "./assets/fx/chargers/helmet/tex/chargers.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

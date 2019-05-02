@@ -1,0 +1,28 @@
+{
+  "filters": [
+    {
+      "id": 35,
+      "title": "Bucs Emoji Filter",
+      "icon": "assets/images/emoti/Asset 3@20x.png",
+      "subMenu": "page_cam_emoti"
+    },
+    {
+      "id": 48,
+      "title": "Bucs Face Paint Filter",
+      "icon": "./assets/icons/face_paint_icon_general.png",
+      "subMenu": ""
+    },
+    {
+      "id": 4,
+      "title": "Bucs 3D Dog Filter",
+      "icon": "assets/icons/BTN DOG CAM.png",
+      "subMenu": ""
+    },
+    {
+      "id": 12,
+      "title": "Bucs Helmet Filter",
+      "icon": "assets/icons/bucs_helmet.png",
+      "subMenu": ""
+    }
+  ]
+}

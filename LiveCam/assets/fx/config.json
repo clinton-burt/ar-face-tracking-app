@@ -1,0 +1,41 @@
+{
+  "filters": [
+    {
+      "title": " Emojis",
+      "icon": "./assets/fx/emoji/Asset 3@20x.png",
+      "JSONsource": "./assets/fx/emoji/emojis.json"
+    },
+    {
+      "title": " Animated Emojis",
+      "JSONsource": "./assets/fx/emojis_animated/emoji_animated_atlas_2018.json"
+    },
+    {
+      "title": "3D Dogs",
+      "JSONsource": "./assets/fx/dog/dog_filters_all.json"
+    },
+    {
+      "title": "Facepaint",
+      "JSONsource": "./assets/fx/facepaint/facepaint.json"
+    },
+    {
+      "title": "Red, White and Blue Facepaint",
+      "JSONsource": "./assets/fx/red_white_blue_facepaint/red_white_blue_facepaint.json"
+    },
+    {
+      "title": "Alien",
+      "JSONsource": "./assets/fx/alien/alien.json"
+    },
+    {
+      "title": "grinchface",
+      "JSONsource": "./assets/fx/grinchface/grinchface.json"
+    },
+    {
+      "title": "werewolf",
+      "JSONsource": "./assets/fx/werewolf/werewolf.json"
+    },
+    {
+      "title": "jasonsMask",
+      "JSONsource": "./assets/fx/jasons_mask/jasons_mask.json"
+    }
+  ]
+}
